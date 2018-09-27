@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_EaglesInternalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblBookingMessenger">
+    <Key>
+      <PropertyRef Name="RecNo" />
+    </Key>
+    <Property Name="RecNo" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingDate" Type="date" />
+    <Property Name="BookingTime" Type="varchar" MaxLength="50" />
+    <Property Name="CusTel" Type="varchar" MaxLength="50" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="200" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="200" />
+    <Property Name="Location" Type="varchar" MaxLength="200" />
+    <Property Name="JobType1" Type="varchar" MaxLength="50" />
+    <Property Name="JobType2" Type="varchar" MaxLength="50" />
+    <Property Name="JobType3" Type="varchar" MaxLength="50" />
+    <Property Name="JobType4" Type="varchar" MaxLength="50" />
+    <Property Name="JobDesc" Type="varchar" MaxLength="300" />
+    <Property Name="ReceiveComback" Type="varchar" MaxLength="200" />
+    <Property Name="BookingBy" Type="varchar" MaxLength="100" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="Messenger" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+    <Property Name="ReceiveBy" Type="varchar" MaxLength="100" />
+    <Property Name="StatusJob" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCustomerList">
+    <Key>
+      <PropertyRef Name="CustomerName" />
+    </Key>
+    <Property Name="CustomerName" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerTel" Type="nchar" MaxLength="20" />
+    <Property Name="ContactPerson" Type="nchar" MaxLength="50" />
+    <Property Name="Location" Type="nchar" MaxLength="200" />
+    <Property Name="CreateBy" Type="nchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="UpdateBy" Type="nchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="date" />
+  </EntityType>
+  <EntityType Name="tblFileIT">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Filename" Type="varchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Createby" Type="varchar" MaxLength="50" />
+    <Property Name="Createdate" Type="datetime" />
+    <Property Name="Updateby" Type="varchar" MaxLength="50" />
+    <Property Name="Updatedate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblMessenger">
+    <Key>
+      <PropertyRef Name="MessDate" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="MessDate" Type="datetime" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TimeOut" Type="varchar" MaxLength="20" />
+    <Property Name="MileOut" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="TimeIn" Type="varchar" MaxLength="20" />
+    <Property Name="MileIn" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prefix_thai" Type="varchar" MaxLength="10" />
+    <Property Name="Name_thai" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname_thai" Type="varchar" MaxLength="50" />
+    <Property Name="Prefix_eng" Type="varchar" MaxLength="10" />
+    <Property Name="Name_eng" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname_eng" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="Dept" Type="varchar" MaxLength="50" />
+    <Property Name="Section" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UserDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="NickName" Type="varchar" MaxLength="20" />
+    <Property Name="Approve1" Type="varchar" MaxLength="10" />
+    <Property Name="Approve2" Type="varchar" MaxLength="10" />
+    <Property Name="StatusID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserMenu">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Menu" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Read_" Type="int" />
+    <Property Name="Save_" Type="int" />
+    <Property Name="Edit_" Type="int" />
+    <Property Name="Delete_" Type="int" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="DB_EaglesInternalModelStoreContainer">
+    <EntitySet Name="tblBookingMessenger" EntityType="Self.tblBookingMessenger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerList" EntityType="Self.tblCustomerList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFileIT" EntityType="Self.tblFileIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMessenger" EntityType="Self.tblMessenger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserMenu" EntityType="Self.tblUserMenu" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

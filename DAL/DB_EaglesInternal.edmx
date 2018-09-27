@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DB_EaglesInternalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblBookingMessenger">
+          <Key>
+            <PropertyRef Name="RecNo" />
+          </Key>
+          <Property Name="RecNo" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookingDate" Type="date" />
+          <Property Name="BookingTime" Type="varchar" MaxLength="50" />
+          <Property Name="CusTel" Type="varchar" MaxLength="50" />
+          <Property Name="ContactPerson" Type="varchar" MaxLength="200" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="200" />
+          <Property Name="Location" Type="varchar" MaxLength="200" />
+          <Property Name="JobType1" Type="varchar" MaxLength="50" />
+          <Property Name="JobType2" Type="varchar" MaxLength="50" />
+          <Property Name="JobType3" Type="varchar" MaxLength="50" />
+          <Property Name="JobType4" Type="varchar" MaxLength="50" />
+          <Property Name="JobDesc" Type="varchar" MaxLength="300" />
+          <Property Name="ReceiveComback" Type="varchar" MaxLength="200" />
+          <Property Name="BookingBy" Type="varchar" MaxLength="100" />
+          <Property Name="Branch" Type="varchar" MaxLength="100" />
+          <Property Name="Messenger" Type="varchar" MaxLength="100" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Remark" Type="varchar" MaxLength="200" />
+          <Property Name="ReceiveBy" Type="varchar" MaxLength="100" />
+          <Property Name="StatusJob" Type="int" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCustomerList">
+          <Key>
+            <PropertyRef Name="CustomerName" />
+          </Key>
+          <Property Name="CustomerName" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="CustomerTel" Type="nchar" MaxLength="20" />
+          <Property Name="ContactPerson" Type="nchar" MaxLength="50" />
+          <Property Name="Location" Type="nchar" MaxLength="200" />
+          <Property Name="CreateBy" Type="nchar" MaxLength="30" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="UpdateBy" Type="nchar" MaxLength="30" />
+          <Property Name="UpdateDate" Type="date" />
+        </EntityType>
+        <EntityType Name="tblFileIT">
+          <Key>
+            <PropertyRef Name="FileID" />
+          </Key>
+          <Property Name="FileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Filename" Type="varchar" MaxLength="50" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="Createby" Type="varchar" MaxLength="50" />
+          <Property Name="Createdate" Type="datetime" />
+          <Property Name="Updateby" Type="varchar" MaxLength="50" />
+          <Property Name="Updatedate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMessenger">
+          <Key>
+            <PropertyRef Name="MessDate" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="MessDate" Type="datetime" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TimeOut" Type="varchar" MaxLength="20" />
+          <Property Name="MileOut" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TimeIn" Type="varchar" MaxLength="20" />
+          <Property Name="MileIn" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Prefix_thai" Type="varchar" MaxLength="10" />
+          <Property Name="Name_thai" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Surname_thai" Type="varchar" MaxLength="50" />
+          <Property Name="Prefix_eng" Type="varchar" MaxLength="10" />
+          <Property Name="Name_eng" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Surname_eng" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Position" Type="varchar" MaxLength="50" />
+          <Property Name="Dept" Type="varchar" MaxLength="50" />
+          <Property Name="Section" Type="varchar" MaxLength="50" />
+          <Property Name="Branch" Type="varchar" MaxLength="50" />
+          <Property Name="UserBy" Type="varchar" MaxLength="50" />
+          <Property Name="UserDate" Type="datetime" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="NickName" Type="varchar" MaxLength="20" />
+          <Property Name="Approve1" Type="varchar" MaxLength="10" />
+          <Property Name="Approve2" Type="varchar" MaxLength="10" />
+          <Property Name="StatusID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblUserMenu">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="Menu" />
+          </Key>
+          <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Menu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Read_" Type="int" />
+          <Property Name="Save_" Type="int" />
+          <Property Name="Edit_" Type="int" />
+          <Property Name="Delete_" Type="int" />
+          <Property Name="UserBy" Type="varchar" MaxLength="50" />
+          <Property Name="LastUpdate" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="DB_EaglesInternalModelStoreContainer">
+          <EntitySet Name="tblBookingMessenger" EntityType="Self.tblBookingMessenger" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblCustomerList" EntityType="Self.tblCustomerList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblFileIT" EntityType="Self.tblFileIT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMessenger" EntityType="Self.tblMessenger" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserMenu" EntityType="Self.tblUserMenu" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_EaglesInternalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Prefix_thai" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Name_thai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Surname_thai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Prefix_eng" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Name_eng" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Surname_eng" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="NickName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Approve1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Approve2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StatusID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="DB_EaglesInternalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" />
+          <EntitySet Name="tblUserMenu" EntityType="DB_EaglesInternalModel.tblUserMenu" />
+          <EntitySet Name="tblBookingMessenger" EntityType="DB_EaglesInternalModel.tblBookingMessenger" />
+          <EntitySet Name="tblMessenger" EntityType="DB_EaglesInternalModel.tblMessenger" />
+          <EntitySet Name="tblCustomerLists" EntityType="DB_EaglesInternalModel.tblCustomerList" />
+          <EntitySet Name="tblFileITs" EntityType="DB_EaglesInternalModel.tblFileIT" />
+        </EntityContainer>
+        <EntityType Name="tblUserMenu">
+          <Key>
+            <PropertyRef Name="Menu" />
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Menu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Read_" Type="Int32" />
+          <Property Name="Save_" Type="Int32" />
+          <Property Name="Edit_" Type="Int32" />
+          <Property Name="Delete_" Type="Int32" />
+          <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblBookingMessenger">
+          <Key>
+            <PropertyRef Name="RecNo" />
+          </Key>
+          <Property Name="RecNo" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookingDate" Type="DateTime" Precision="0" />
+          <Property Name="BookingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CusTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContactPerson" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="JobType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JobType2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JobType3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JobDesc" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="ReceiveComback" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="BookingBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Branch" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Messenger" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ReceiveBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="StatusJob" Type="Int32" />
+          <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="JobType4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblMessenger">
+          <Key>
+            <PropertyRef Name="MessDate" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="MessDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TimeOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MileOut" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TimeIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MileIn" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblCustomerList">
+          <Key>
+            <PropertyRef Name="CustomerName" />
+          </Key>
+          <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="CustomerTel" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tblFileIT">
+          <Key>
+            <PropertyRef Name="FileID" />
+          </Key>
+          <Property Name="FileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Filename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Createby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Createdate" Type="DateTime" Precision="3" />
+          <Property Name="Updateby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Updatedate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_EaglesInternalModelStoreContainer" CdmEntityContainer="DB_EaglesInternalEntities">
+          <EntitySetMapping Name="tblUser">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUser">
+              <MappingFragment StoreEntitySet="tblUser">
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="Approve2" ColumnName="Approve2" />
+                <ScalarProperty Name="Approve1" ColumnName="Approve1" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Prefix_thai" ColumnName="Prefix_thai" />
+                <ScalarProperty Name="Name_thai" ColumnName="Name_thai" />
+                <ScalarProperty Name="Surname_thai" ColumnName="Surname_thai" />
+                <ScalarProperty Name="Prefix_eng" ColumnName="Prefix_eng" />
+                <ScalarProperty Name="Name_eng" ColumnName="Name_eng" />
+                <ScalarProperty Name="Surname_eng" ColumnName="Surname_eng" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Dept" ColumnName="Dept" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+                <ScalarProperty Name="UserDate" ColumnName="UserDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserMenu">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUserMenu">
+              <MappingFragment StoreEntitySet="tblUserMenu">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+                <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+                <ScalarProperty Name="Delete_" ColumnName="Delete_" />
+                <ScalarProperty Name="Edit_" ColumnName="Edit_" />
+                <ScalarProperty Name="Save_" ColumnName="Save_" />
+                <ScalarProperty Name="Read_" ColumnName="Read_" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Menu" ColumnName="Menu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblBookingMessenger">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblBookingMessenger">
+              <MappingFragment StoreEntitySet="tblBookingMessenger">
+                <ScalarProperty Name="JobType4" ColumnName="JobType4" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="StatusJob" ColumnName="StatusJob" />
+                <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Messenger" ColumnName="Messenger" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="BookingBy" ColumnName="BookingBy" />
+                <ScalarProperty Name="ReceiveComback" ColumnName="ReceiveComback" />
+                <ScalarProperty Name="JobDesc" ColumnName="JobDesc" />
+                <ScalarProperty Name="JobType3" ColumnName="JobType3" />
+                <ScalarProperty Name="JobType2" ColumnName="JobType2" />
+                <ScalarProperty Name="JobType1" ColumnName="JobType1" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="CusTel" ColumnName="CusTel" />
+                <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+                <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+                <ScalarProperty Name="RecNo" ColumnName="RecNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMessenger">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblMessenger">
+              <MappingFragment StoreEntitySet="tblMessenger">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="MileIn" ColumnName="MileIn" />
+                <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
+                <ScalarProperty Name="MileOut" ColumnName="MileOut" />
+                <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MessDate" ColumnName="MessDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCustomerLists">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblCustomerList">
+              <MappingFragment StoreEntitySet="tblCustomerList">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="CustomerTel" ColumnName="CustomerTel" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFileITs">
+            <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblFileIT">
+              <MappingFragment StoreEntitySet="tblFileIT">
+                <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
+                <ScalarProperty Name="Updateby" ColumnName="Updateby" />
+                <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+                <ScalarProperty Name="Createby" ColumnName="Createby" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Filename" ColumnName="Filename" />
+                <ScalarProperty Name="FileID" ColumnName="FileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_EaglesInternalModelStoreContainer" CdmEntityContainer="DB_EaglesInternalEntities">
+    <EntitySetMapping Name="tblBookingMessenger">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblBookingMessenger">
+        <MappingFragment StoreEntitySet="tblBookingMessenger">
+          <ScalarProperty Name="RecNo" ColumnName="RecNo" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="CusTel" ColumnName="CusTel" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="JobType1" ColumnName="JobType1" />
+          <ScalarProperty Name="JobType2" ColumnName="JobType2" />
+          <ScalarProperty Name="JobType3" ColumnName="JobType3" />
+          <ScalarProperty Name="JobDesc" ColumnName="JobDesc" />
+          <ScalarProperty Name="ReceiveComback" ColumnName="ReceiveComback" />
+          <ScalarProperty Name="BookingBy" ColumnName="BookingBy" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Messenger" ColumnName="Messenger" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
+          <ScalarProperty Name="StatusJob" ColumnName="StatusJob" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUser">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Prefix_thai" ColumnName="Prefix_thai" />
+          <ScalarProperty Name="Name_thai" ColumnName="Name_thai" />
+          <ScalarProperty Name="Surname_thai" ColumnName="Surname_thai" />
+          <ScalarProperty Name="Prefix_eng" ColumnName="Prefix_eng" />
+          <ScalarProperty Name="Name_eng" ColumnName="Name_eng" />
+          <ScalarProperty Name="Surname_eng" ColumnName="Surname_eng" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="UserDate" ColumnName="UserDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserMenu">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUserMenu">
+        <MappingFragment StoreEntitySet="tblUserMenu">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="Delete_" ColumnName="Delete_" />
+          <ScalarProperty Name="Edit_" ColumnName="Edit_" />
+          <ScalarProperty Name="Save_" ColumnName="Save_" />
+          <ScalarProperty Name="Read_" ColumnName="Read_" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Menu" ColumnName="Menu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

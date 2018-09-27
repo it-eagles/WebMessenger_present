@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9506e2a9d91240c29cbed35da5e9fadd" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Document" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.M_Document" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Referal_Doc" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblAbsent" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblBookingMessenger" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblCaseJob" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblDivision" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblFileIT" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblIDRecording" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblItJobDoc" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblMenu" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblMessenger" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblRunningNumber" Width="1.5" PointX="6.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblUser" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblUserGroup" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblUserMenu" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblUsername" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblAccessList" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblAccessListDetail" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Branch" Width="1.5" PointX="11.375" PointY="17.25" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Department" Width="1.5" PointX="15.875" PointY="16.875" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Position" Width="1.5" PointX="18.125" PointY="17" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.RunNo" Width="1.5" PointX="5.75" PointY="13.75" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Side" Width="1.5" PointX="13.625" PointY="16.875" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblCustomerList" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.Status" Width="1.5" PointX="0.75" PointY="15.75" />
+        <AssociationConnector Association="DB_EaglesInternalModel.FK_Branch_tblUser" />
+        <AssociationConnector Association="DB_EaglesInternalModel.FK_Side_Branch" />
+        <AssociationConnector Association="DB_EaglesInternalModel.FK_Department_Side" />
+        <AssociationConnector Association="DB_EaglesInternalModel.FK_Position_Department" />
+        <AssociationConnector Association="DB_EaglesInternalModel.FK_Document_Document" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

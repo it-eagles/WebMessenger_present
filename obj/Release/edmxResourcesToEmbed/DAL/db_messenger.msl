@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_MessengerModelStoreContainer" CdmEntityContainer="DB_MessengerEntities">
+    <EntitySetMapping Name="tblBookingMessenger">
+      <EntityTypeMapping TypeName="DB_MessengerModel.tblBookingMessenger">
+        <MappingFragment StoreEntitySet="tblBookingMessenger">
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="RecNo" ColumnName="RecNo" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="CusTel" ColumnName="CusTel" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="JobType1" ColumnName="JobType1" />
+          <ScalarProperty Name="JobType2" ColumnName="JobType2" />
+          <ScalarProperty Name="JobType3" ColumnName="JobType3" />
+          <ScalarProperty Name="JobDesc" ColumnName="JobDesc" />
+          <ScalarProperty Name="ReceiveComback" ColumnName="ReceiveComback" />
+          <ScalarProperty Name="BookingBy" ColumnName="BookingBy" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Messenger" ColumnName="Messenger" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
+          <ScalarProperty Name="StatusJob" ColumnName="StatusJob" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

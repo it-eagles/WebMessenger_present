@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_EaglesInternalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="BranchID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchName" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="SideID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" MaxLength="300" />
+    <Property Name="Keyword" Type="nvarchar" MaxLength="300" />
+    <Property Name="UserBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserDate" Type="date" />
+  </EntityType>
+  <EntityType Name="M_Document">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Userby" Type="nvarchar" MaxLength="50" />
+    <Property Name="Userdate" Type="date" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="PositionID" />
+    </Key>
+    <Property Name="PositionID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PositionName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="DepartmentID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Referal_Doc">
+    <Key>
+      <PropertyRef Name="ReflID" />
+    </Key>
+    <Property Name="ReflID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Firstname" Type="varchar" MaxLength="30" />
+    <Property Name="Lastname" Type="varchar" MaxLength="30" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="varchar" MaxLength="20" />
+    <Property Name="Refdate" Type="varchar" MaxLength="20" />
+    <Property Name="Source" Type="varchar" MaxLength="20" />
+    <Property Name="Remark" Type="varchar" MaxLength="50" />
+    <Property Name="Company" Type="varchar" MaxLength="100" />
+    <Property Name="Person" Type="varchar" MaxLength="80" />
+    <Property Name="Tel" Type="varchar" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="70" />
+    <Property Name="Line" Type="varchar" MaxLength="20" />
+    <Property Name="Detail" Type="text" />
+    <Property Name="Servicetype" Type="varchar" MaxLength="10" />
+    <Property Name="Typeremark" Type="varchar" MaxLength="30" />
+    <Property Name="Commodity" Type="text" />
+    <Property Name="Weight" Type="varchar" MaxLength="80" />
+    <Property Name="Volume" Type="varchar" MaxLength="80" />
+    <Property Name="Dimension" Type="varchar" MaxLength="80" />
+    <Property Name="Origin" Type="text" />
+    <Property Name="Destination" Type="text" />
+    <Property Name="Special" Type="text" />
+  </EntityType>
+  <EntityType Name="RunNo">
+    <Key>
+      <PropertyRef Name="NO" />
+    </Key>
+    <Property Name="NO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="RunNo" Type="int" />
+  </EntityType>
+  <EntityType Name="Side">
+    <Key>
+      <PropertyRef Name="SideID" />
+    </Key>
+    <Property Name="SideID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SideName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="100" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="BranchID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_EaglesInternal.dbo.Status' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="int" Nullable="false" />
+    <Property Name="StatusName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblAbsent">
+    <Key>
+      <PropertyRef Name="IDAbsent" />
+    </Key>
+    <Property Name="IDAbsent" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CodeID" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="firstname" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="SentDate" Type="datetime" Nullable="false" />
+    <Property Name="SentTo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SentTo1" Type="varchar" MaxLength="50" />
+    <Property Name="SentTo2" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="Sections" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="numday" Type="int" />
+    <Property Name="numhr" Type="int" />
+    <Property Name="nummin" Type="int" />
+    <Property Name="TypeAbsent" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="formatAbsent" Type="varchar" MaxLength="30" />
+    <Property Name="approvedate" Type="datetime" />
+    <Property Name="approve1date" Type="datetime" />
+    <Property Name="why" Type="text" />
+    <Property Name="SAbDate" Type="datetime" />
+    <Property Name="SAbTime" Type="char" MaxLength="10" />
+    <Property Name="EAbDate" Type="datetime" />
+    <Property Name="EAbTime" Type="char" MaxLength="10" />
+    <Property Name="Country" Type="char" MaxLength="10" />
+    <Property Name="CountryName" Type="text" />
+    <Property Name="BookAbsent" Type="char" MaxLength="10" />
+    <Property Name="Office" Type="char" MaxLength="10" />
+    <Property Name="NameOff" Type="varchar" MaxLength="50" />
+    <Property Name="Why2" Type="text" />
+    <Property Name="DocAbsent" Type="text" />
+    <Property Name="DocAbsent2" Type="text" />
+    <Property Name="DocAbsent3" Type="text" />
+    <Property Name="fileupload" Type="text" />
+    <Property Name="fileupload2" Type="text" />
+    <Property Name="fileupload3" Type="text" />
+    <Property Name="Status" Type="varchar" MaxLength="30" />
+    <Property Name="DataStatus" Type="varchar" MaxLength="30" />
+    <Property Name="SDay" Type="char" MaxLength="10" />
+    <Property Name="SMonth" Type="char" MaxLength="10" />
+    <Property Name="SYear" Type="char" MaxLength="10" />
+    <Property Name="MailOff" Type="varchar" MaxLength="50" />
+    <Property Name="statusOff" Type="varchar" MaxLength="50" />
+    <Property Name="PeriodYear" Type="char" MaxLength="20" />
+    <Property Name="ansTime" Type="varchar" MaxLength="50" />
+    <Property Name="FileText" Type="text" />
+    <Property Name="comment" Type="text" />
+    <Property Name="MailCC" Type="varchar" MaxLength="50" />
+    <Property Name="Docsta" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_EaglesInternal.dbo.tblAccessList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessList">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="AccessName" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="TypeofAccess" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="ValueOfAccess" Type="float" />
+    <Property Name="WarrantyValue" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="100" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="StatusOnStock" Type="char" MaxLength="5" />
+    <Property Name="SN" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Owner" Type="varchar" MaxLength="50" />
+    <Property Name="AccessAccount" Type="varchar" MaxLength="50" />
+    <Property Name="ReceiveDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_EaglesInternal.dbo.tblAccessListDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessListDetail">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="ItemNo" />
+      <PropertyRef Name="TypeOfDevice" />
+      <PropertyRef Name="NameOfDevice" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="float" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyValue" Type="float" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblBookingMessenger">
+    <Key>
+      <PropertyRef Name="RecNo" />
+    </Key>
+    <Property Name="RecNo" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingDate" Type="date" />
+    <Property Name="BookingTime" Type="varchar" MaxLength="50" />
+    <Property Name="CusTel" Type="varchar" MaxLength="50" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="200" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="200" />
+    <Property Name="Location" Type="varchar" MaxLength="200" />
+    <Property Name="JobType1" Type="varchar" MaxLength="50" />
+    <Property Name="JobType2" Type="varchar" MaxLength="50" />
+    <Property Name="JobType3" Type="varchar" MaxLength="50" />
+    <Property Name="JobType4" Type="varchar" MaxLength="50" />
+    <Property Name="JobDesc" Type="varchar" MaxLength="300" />
+    <Property Name="ReceiveComback" Type="varchar" MaxLength="200" />
+    <Property Name="BookingBy" Type="varchar" MaxLength="100" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="Messenger" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+    <Property Name="ReceiveBy" Type="varchar" MaxLength="100" />
+    <Property Name="StatusJob" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblCaseJob">
+    <Key>
+      <PropertyRef Name="CaseJobID" />
+    </Key>
+    <Property Name="CaseJobID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CaseName" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="tblCustomerList">
+    <Key>
+      <PropertyRef Name="CustomerName" />
+    </Key>
+    <Property Name="CustomerName" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerTel" Type="nchar" MaxLength="20" />
+    <Property Name="ContactPerson" Type="nchar" MaxLength="50" />
+    <Property Name="Location" Type="nchar" MaxLength="200" />
+    <Property Name="CreateBy" Type="nchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="UpdateBy" Type="nchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_EaglesInternal.dbo.tblDivision' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblDivision">
+    <Key>
+      <PropertyRef Name="DivisionId" />
+    </Key>
+    <Property Name="DivisionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DivisionName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblFileIT">
+    <Key>
+      <PropertyRef Name="FileID" />
+    </Key>
+    <Property Name="FileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Filename" Type="varchar" MaxLength="50" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="Createby" Type="varchar" MaxLength="50" />
+    <Property Name="Createdate" Type="datetime" />
+    <Property Name="Updateby" Type="varchar" MaxLength="50" />
+    <Property Name="Updatedate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_EaglesInternal.dbo.tblIDRecording' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblIDRecording">
+    <Key>
+      <PropertyRef Name="recordingID" />
+    </Key>
+    <Property Name="recordingID" Type="int" Nullable="false" />
+    <Property Name="recordingDate" Type="date" />
+    <Property Name="recordingTime" Type="time" Precision="7" />
+    <Property Name="problems" Type="varchar" MaxLength="50" />
+    <Property Name="reason" Type="varchar" MaxLength="50" />
+    <Property Name="branch" Type="varchar" MaxLength="50" />
+    <Property Name="recording_Time" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblItJobDoc">
+    <Key>
+      <PropertyRef Name="ItJobDocID" />
+    </Key>
+    <Property Name="ItJobDocID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RequestFrom" Type="varchar" MaxLength="50" />
+    <Property Name="UserIP" Type="varchar" MaxLength="50" />
+    <Property Name="RecipientJob" Type="varchar" MaxLength="50" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="AssignJobTo" Type="varchar" MaxLength="50" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="UserTel" Type="varchar" MaxLength="10" />
+    <Property Name="CaseJobID" Type="varchar" MaxLength="50" />
+    <Property Name="JobDetail" Type="text" />
+    <Property Name="RepairDetail" Type="text" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="JobStatus" Type="varchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Updateby" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DivisionName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblMenu">
+    <Key>
+      <PropertyRef Name="Menu" />
+    </Key>
+    <Property Name="Menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblMessenger">
+    <Key>
+      <PropertyRef Name="MessDate" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="MessDate" Type="datetime" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TimeOut" Type="varchar" MaxLength="20" />
+    <Property Name="MileOut" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="TimeIn" Type="varchar" MaxLength="20" />
+    <Property Name="MileIn" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblRunningNumber">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="RunNo" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_EaglesInternal.dbo.tbltimeuser' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tbltimeuser">
+          <Property Name="CodeID" Type="nvarchar" MaxLength="255" />
+          <Property Name="Typenotcome" Type="nvarchar" MaxLength="255" />
+          <Property Name="day" Type="int" />
+          <Property Name="hr" Type="int" />
+          <Property Name="mi" Type="int" />
+        </EntityType>-->
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prefix_thai" Type="varchar" MaxLength="10" />
+    <Property Name="Name_thai" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname_thai" Type="varchar" MaxLength="50" />
+    <Property Name="Prefix_eng" Type="varchar" MaxLength="10" />
+    <Property Name="Name_eng" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname_eng" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="Dept" Type="varchar" MaxLength="50" />
+    <Property Name="Section" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UserDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="NickName" Type="varchar" MaxLength="20" />
+    <Property Name="Approve1" Type="varchar" MaxLength="10" />
+    <Property Name="Approve2" Type="varchar" MaxLength="10" />
+    <Property Name="StatusID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupCode" />
+    </Key>
+    <Property Name="UserGroupCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserGroupName" Type="varchar" MaxLength="100" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateBy" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="tblUserMenu">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Menu" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Read_" Type="int" />
+    <Property Name="Save_" Type="int" />
+    <Property Name="Edit_" Type="int" />
+    <Property Name="Delete_" Type="int" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblUsername">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+    <Property Name="UserGroup" Type="varchar" MaxLength="100" />
+    <Property Name="GroupName" Type="varchar" MaxLength="100" />
+    <Property Name="UserStatus" Type="varchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="EditBy" Type="varchar" MaxLength="50" />
+    <Property Name="EditDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_Branch_tblUser">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="Branch" Type="Self.Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Department_Side">
+    <End Role="Side" Type="Self.Side" Multiplicity="0..1" />
+    <End Role="Department" Type="Self.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Side">
+        <PropertyRef Name="SideID" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="SideID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Document">
+    <End Role="Document" Type="Self.Document" Multiplicity="1" />
+    <End Role="Document1" Type="Self.Document" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Document">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="Document1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Position_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Position" Type="Self.Position" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Position">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Side_Branch">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="Side" Type="Self.Side" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="BranchID" />
+      </Principal>
+      <Dependent Role="Side">
+        <PropertyRef Name="BranchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_EaglesInternalModelStoreContainer">
+    <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Document" EntityType="Self.Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="M_Document" EntityType="Self.M_Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Referal_Doc" EntityType="Self.Referal_Doc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RunNo" EntityType="Self.RunNo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Side" EntityType="Self.Side" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAbsent" EntityType="Self.tblAbsent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBookingMessenger" EntityType="Self.tblBookingMessenger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCaseJob" EntityType="Self.tblCaseJob" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomerList" EntityType="Self.tblCustomerList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFileIT" EntityType="Self.tblFileIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblItJobDoc" EntityType="Self.tblItJobDoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMenu" EntityType="Self.tblMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMessenger" EntityType="Self.tblMessenger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRunningNumber" EntityType="Self.tblRunningNumber" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserGroup" EntityType="Self.tblUserGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserMenu" EntityType="Self.tblUserMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUsername" EntityType="Self.tblUsername" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Status].[StatusID] AS [StatusID], 
+    [Status].[StatusName] AS [StatusName]
+    FROM [dbo].[Status] AS [Status]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessList" EntityType="Self.tblAccessList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessList].[AccessNo] AS [AccessNo], 
+    [tblAccessList].[AccessName] AS [AccessName], 
+    [tblAccessList].[RecordDate] AS [RecordDate], 
+    [tblAccessList].[TypeofAccess] AS [TypeofAccess], 
+    [tblAccessList].[OrderNo] AS [OrderNo], 
+    [tblAccessList].[OrderDate] AS [OrderDate], 
+    [tblAccessList].[ValueOfAccess] AS [ValueOfAccess], 
+    [tblAccessList].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessList].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessList].[StartWarranty] AS [StartWarranty], 
+    [tblAccessList].[EndWarranty] AS [EndWarranty], 
+    [tblAccessList].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessList].[SupplierCode] AS [SupplierCode], 
+    [tblAccessList].[SupplierName] AS [SupplierName], 
+    [tblAccessList].[Remark] AS [Remark], 
+    [tblAccessList].[CreateDate] AS [CreateDate], 
+    [tblAccessList].[CreateBy] AS [CreateBy], 
+    [tblAccessList].[ModifyDate] AS [ModifyDate], 
+    [tblAccessList].[ModifyBy] AS [ModifyBy], 
+    [tblAccessList].[StatusOnStock] AS [StatusOnStock], 
+    [tblAccessList].[SN] AS [SN], 
+    [tblAccessList].[Branch] AS [Branch], 
+    [tblAccessList].[Department] AS [Department], 
+    [tblAccessList].[Owner] AS [Owner], 
+    [tblAccessList].[AccessAccount] AS [AccessAccount], 
+    [tblAccessList].[ReceiveDate] AS [ReceiveDate]
+    FROM [dbo].[tblAccessList] AS [tblAccessList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessListDetail" EntityType="Self.tblAccessListDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessListDetail].[AccessNo] AS [AccessNo], 
+    [tblAccessListDetail].[ItemNo] AS [ItemNo], 
+    [tblAccessListDetail].[TypeOfDevice] AS [TypeOfDevice], 
+    [tblAccessListDetail].[NameOfDevice] AS [NameOfDevice], 
+    [tblAccessListDetail].[Price] AS [Price], 
+    [tblAccessListDetail].[OrderNo] AS [OrderNo], 
+    [tblAccessListDetail].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessListDetail].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessListDetail].[StartWarranty] AS [StartWarranty], 
+    [tblAccessListDetail].[EndWarranty] AS [EndWarranty], 
+    [tblAccessListDetail].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessListDetail].[SupplierCode] AS [SupplierCode], 
+    [tblAccessListDetail].[SupplierName] AS [SupplierName], 
+    [tblAccessListDetail].[CreateDate] AS [CreateDate], 
+    [tblAccessListDetail].[CreateBy] AS [CreateBy], 
+    [tblAccessListDetail].[ModifyDate] AS [ModifyDate], 
+    [tblAccessListDetail].[ModifyName] AS [ModifyName]
+    FROM [dbo].[tblAccessListDetail] AS [tblAccessListDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblDivision" EntityType="Self.tblDivision" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDivision].[DivisionId] AS [DivisionId], 
+    [tblDivision].[DivisionName] AS [DivisionName]
+    FROM [dbo].[tblDivision] AS [tblDivision]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblIDRecording" EntityType="Self.tblIDRecording" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblIDRecording].[recordingID] AS [recordingID], 
+    [tblIDRecording].[recordingDate] AS [recordingDate], 
+    [tblIDRecording].[recordingTime] AS [recordingTime], 
+    [tblIDRecording].[problems] AS [problems], 
+    [tblIDRecording].[reason] AS [reason], 
+    [tblIDRecording].[branch] AS [branch], 
+    [tblIDRecording].[recording_Time] AS [recording_Time]
+    FROM [dbo].[tblIDRecording] AS [tblIDRecording]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Branch_tblUser" Association="Self.FK_Branch_tblUser">
+      <End Role="tblUser" EntitySet="tblUser" />
+      <End Role="Branch" EntitySet="Branch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Department_Side" Association="Self.FK_Department_Side">
+      <End Role="Side" EntitySet="Side" />
+      <End Role="Department" EntitySet="Department" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Document" Association="Self.FK_Document_Document">
+      <End Role="Document" EntitySet="Document" />
+      <End Role="Document1" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Position_Department" Association="Self.FK_Position_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Position" EntitySet="Position" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Side_Branch" Association="Self.FK_Side_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="Side" EntitySet="Side" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

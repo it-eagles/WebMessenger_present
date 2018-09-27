@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_EaglesInternalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblBookingMessenger">
+    <Key>
+      <PropertyRef Name="RecNo" />
+    </Key>
+    <Property Name="RecNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="BookingTime" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CusTel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JobType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobType2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobType3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobDesc" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveComback" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BookingBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Branch" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Messenger" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StatusJob" Type="Int32" />
+    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Prefix_thai" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name_thai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Surname_thai" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prefix_eng" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name_eng" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Surname_eng" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="DB_EaglesInternalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBookingMessenger" EntityType="Self.tblBookingMessenger" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" />
+    <EntitySet Name="tblUserMenu" EntityType="DB_EaglesInternalModel.tblUserMenu" />
+  </EntityContainer>
+  <EntityType Name="tblUserMenu">
+    <Key>
+      <PropertyRef Name="Menu" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Menu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Read_" Type="Int32" />
+    <Property Name="Save_" Type="Int32" />
+    <Property Name="Edit_" Type="Int32" />
+    <Property Name="Delete_" Type="Int32" />
+    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

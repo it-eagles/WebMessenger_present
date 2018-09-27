@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMessenger" msprop:Generator_TableClassName="dtMessengerDataTable" msprop:Generator_TableVarName="tabledtMessenger" msprop:Generator_RowChangedName="dtMessengerRowChanged" msprop:Generator_TablePropName="dtMessenger" msprop:Generator_RowDeletingName="dtMessengerRowDeleting" msprop:Generator_RowChangingName="dtMessengerRowChanging" msprop:Generator_RowEvHandlerName="dtMessengerRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMessengerRowDeleted" msprop:Generator_RowClassName="dtMessengerRow" msprop:Generator_UserTableName="dtMessenger" msprop:Generator_RowEvArgName="dtMessengerRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Recno" msprop:Generator_ColumnVarNameInTable="columnRecno" msprop:Generator_ColumnPropNameInRow="Recno" msprop:Generator_ColumnPropNameInTable="RecnoColumn" msprop:Generator_UserColumnName="Recno" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BookingTime" msprop:Generator_ColumnVarNameInTable="columnBookingTime" msprop:Generator_ColumnPropNameInRow="BookingTime" msprop:Generator_ColumnPropNameInTable="BookingTimeColumn" msprop:Generator_UserColumnName="BookingTime" type="xs:string" minOccurs="0" />
+              <xs:element name="CusTel" msprop:Generator_ColumnVarNameInTable="columnCusTel" msprop:Generator_ColumnPropNameInRow="CusTel" msprop:Generator_ColumnPropNameInTable="CusTelColumn" msprop:Generator_UserColumnName="CusTel" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactPerson" msprop:Generator_ColumnVarNameInTable="columnContactPerson" msprop:Generator_ColumnPropNameInRow="ContactPerson" msprop:Generator_ColumnPropNameInTable="ContactPersonColumn" msprop:Generator_UserColumnName="ContactPerson" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="JobType1" msprop:Generator_ColumnVarNameInTable="columnJobType1" msprop:Generator_ColumnPropNameInRow="JobType1" msprop:Generator_ColumnPropNameInTable="JobType1Column" msprop:Generator_UserColumnName="JobType1" type="xs:string" minOccurs="0" />
+              <xs:element name="JobType2" msprop:Generator_ColumnVarNameInTable="columnJobType2" msprop:Generator_ColumnPropNameInRow="JobType2" msprop:Generator_ColumnPropNameInTable="JobType2Column" msprop:Generator_UserColumnName="JobType2" type="xs:string" minOccurs="0" />
+              <xs:element name="JobType3" msprop:Generator_ColumnVarNameInTable="columnJobType3" msprop:Generator_ColumnPropNameInRow="JobType3" msprop:Generator_ColumnPropNameInTable="JobType3Column" msprop:Generator_UserColumnName="JobType3" type="xs:string" minOccurs="0" />
+              <xs:element name="JobDesc" msprop:Generator_ColumnVarNameInTable="columnJobDesc" msprop:Generator_ColumnPropNameInRow="JobDesc" msprop:Generator_ColumnPropNameInTable="JobDescColumn" msprop:Generator_UserColumnName="JobDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiveComback" msprop:Generator_ColumnVarNameInTable="columnReceiveComback" msprop:Generator_ColumnPropNameInRow="ReceiveComback" msprop:Generator_ColumnPropNameInTable="ReceiveCombackColumn" msprop:Generator_UserColumnName="ReceiveComback" type="xs:string" minOccurs="0" />
+              <xs:element name="BookingBy" msprop:Generator_ColumnVarNameInTable="columnBookingBy" msprop:Generator_ColumnPropNameInRow="BookingBy" msprop:Generator_ColumnPropNameInTable="BookingByColumn" msprop:Generator_UserColumnName="BookingBy" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" msprop:Generator_ColumnVarNameInTable="columnBranch" msprop:Generator_ColumnPropNameInRow="Branch" msprop:Generator_ColumnPropNameInTable="BranchColumn" msprop:Generator_UserColumnName="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="Messenger" msprop:Generator_ColumnVarNameInTable="columnMessenger" msprop:Generator_ColumnPropNameInRow="Messenger" msprop:Generator_ColumnPropNameInTable="MessengerColumn" msprop:Generator_UserColumnName="Messenger" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiveBy" msprop:Generator_ColumnVarNameInTable="columnReceiveBy" msprop:Generator_ColumnPropNameInRow="ReceiveBy" msprop:Generator_ColumnPropNameInTable="ReceiveByColumn" msprop:Generator_UserColumnName="ReceiveBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" msprop:Generator_UserColumnName="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BookingDate" msprop:Generator_ColumnVarNameInTable="columnBookingDate" msprop:Generator_ColumnPropNameInRow="BookingDate" msprop:Generator_ColumnPropNameInTable="BookingDateColumn" msprop:Generator_UserColumnName="BookingDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtMileMessenger" msprop:Generator_TableClassName="dtMileMessengerDataTable" msprop:Generator_TableVarName="tabledtMileMessenger" msprop:Generator_TablePropName="dtMileMessenger" msprop:Generator_RowDeletingName="dtMileMessengerRowDeleting" msprop:Generator_RowChangingName="dtMileMessengerRowChanging" msprop:Generator_RowEvHandlerName="dtMileMessengerRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMileMessengerRowDeleted" msprop:Generator_UserTableName="dtMileMessenger" msprop:Generator_RowChangedName="dtMileMessengerRowChanged" msprop:Generator_RowEvArgName="dtMileMessengerRowChangeEvent" msprop:Generator_RowClassName="dtMileMessengerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TimeOut" msprop:Generator_ColumnVarNameInTable="columnTimeOut" msprop:Generator_ColumnPropNameInRow="TimeOut" msprop:Generator_ColumnPropNameInTable="TimeOutColumn" msprop:Generator_UserColumnName="TimeOut" type="xs:string" minOccurs="0" />
+              <xs:element name="MileOut" msprop:Generator_ColumnVarNameInTable="columnMileOut" msprop:Generator_ColumnPropNameInRow="MileOut" msprop:Generator_ColumnPropNameInTable="MileOutColumn" msprop:Generator_UserColumnName="MileOut" type="xs:decimal" />
+              <xs:element name="TimeIn" msprop:Generator_ColumnVarNameInTable="columnTimeIn" msprop:Generator_ColumnPropNameInRow="TimeIn" msprop:Generator_ColumnPropNameInTable="TimeInColumn" msprop:Generator_UserColumnName="TimeIn" type="xs:string" minOccurs="0" />
+              <xs:element name="MileIn" msprop:Generator_ColumnVarNameInTable="columnMileIn" msprop:Generator_ColumnPropNameInRow="MileIn" msprop:Generator_ColumnPropNameInTable="MileInColumn" msprop:Generator_UserColumnName="MileIn" type="xs:decimal" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobDesc" msprop:Generator_ColumnVarNameInTable="columnJobDesc" msprop:Generator_ColumnPropNameInRow="JobDesc" msprop:Generator_ColumnPropNameInTable="JobDescColumn" msprop:Generator_UserColumnName="JobDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

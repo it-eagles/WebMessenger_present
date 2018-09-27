@@ -1,0 +1,15 @@
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\WebMessenger.dll.config
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\WebMessenger.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\WebMessenger.pdb
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\WebMessenger.xml
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\AjaxControlToolkit.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\Elmah.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\EntityFramework.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\EntityFramework.SqlServer.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\EntityFramework.xml
+D:\DevelopmentProjet\WebMessenger\WebMessenger\bin\EntityFramework.SqlServer.xml
+D:\DevelopmentProjet\WebMessenger\WebMessenger\obj\x64\Debug\WebMessenger.Resources.resources
+D:\DevelopmentProjet\WebMessenger\WebMessenger\obj\x64\Debug\WebMessenger.vbproj.GenerateResource.Cache
+D:\DevelopmentProjet\WebMessenger\WebMessenger\obj\x64\Debug\WebMessenger.dll
+D:\DevelopmentProjet\WebMessenger\WebMessenger\obj\x64\Debug\WebMessenger.xml
+D:\DevelopmentProjet\WebMessenger\WebMessenger\obj\x64\Debug\WebMessenger.pdb
