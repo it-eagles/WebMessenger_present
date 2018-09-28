@@ -1,283 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DB_EaglesInternalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Branch">
-    <Key>
-      <PropertyRef Name="BranchID" />
-    </Key>
-    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="BranchName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UserId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="tblUser" Relationship="Self.FK_Branch_tblUser" FromRole="Branch" ToRole="tblUser" />
-    <NavigationProperty Name="Sides" Relationship="Self.FK_Side_Branch" FromRole="Branch" ToRole="Side" />
-  </EntityType>
-  <EntityType Name="Department">
-    <Key>
-      <PropertyRef Name="DepartmentID" />
-    </Key>
-    <Property Name="DepartmentID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="DepartmentName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="SideID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Side" Relationship="Self.FK_Department_Side" FromRole="Department" ToRole="Side" />
-    <NavigationProperty Name="Positions" Relationship="Self.FK_Position_Department" FromRole="Department" ToRole="Position" />
-  </EntityType>
-  <EntityType Name="Document">
-    <Key>
-      <PropertyRef Name="Name" />
-    </Key>
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Store" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Category" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
-    <Property Name="Keyword" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="UserDate" Type="DateTime" Precision="0" />
-    <NavigationProperty Name="Document1" Relationship="Self.FK_Document_Document" FromRole="Document" ToRole="Document1" />
-    <NavigationProperty Name="Document2" Relationship="Self.FK_Document_Document" FromRole="Document1" ToRole="Document" />
-  </EntityType>
-  <EntityType Name="M_Document">
-    <Key>
-      <PropertyRef Name="Name" />
-    </Key>
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Userby" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Userdate" Type="DateTime" Precision="0" />
-  </EntityType>
-  <EntityType Name="Position">
-    <Key>
-      <PropertyRef Name="PositionID" />
-    </Key>
-    <Property Name="PositionID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="PositionName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="DepartmentID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Department" Relationship="Self.FK_Position_Department" FromRole="Position" ToRole="Department" />
-  </EntityType>
-  <EntityType Name="Referal_Doc">
-    <Key>
-      <PropertyRef Name="ReflID" />
-    </Key>
-    <Property Name="ReflID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Firstname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Lastname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Date" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Refdate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Source" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Company" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Person" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
-    <Property Name="Tel" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
-    <Property Name="Line" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Servicetype" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Typeremark" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Commodity" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Weight" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
-    <Property Name="Volume" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
-    <Property Name="Dimension" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
-    <Property Name="Origin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Destination" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Special" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="RunNo">
-    <Key>
-      <PropertyRef Name="NO" />
-    </Key>
-    <Property Name="NO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="RunNo1" Type="Int32" />
-  </EntityType>
-  <EntityType Name="Side">
-    <Key>
-      <PropertyRef Name="SideID" />
-    </Key>
-    <Property Name="SideID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SideName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-    <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Branch" Relationship="Self.FK_Side_Branch" FromRole="Side" ToRole="Branch" />
-    <NavigationProperty Name="Departments" Relationship="Self.FK_Department_Side" FromRole="Side" ToRole="Department" />
-  </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
-  <EntityType Name="tblAbsent">
-    <Key>
-      <PropertyRef Name="IDAbsent" />
-    </Key>
-    <Property Name="IDAbsent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="CodeID" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="firstname" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SentDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="SentTo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SentTo1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="SentTo2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Department" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Sections" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="numday" Type="Int32" />
-    <Property Name="numhr" Type="Int32" />
-    <Property Name="nummin" Type="Int32" />
-    <Property Name="TypeAbsent" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="formatAbsent" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="approvedate" Type="DateTime" Precision="3" />
-    <Property Name="approve1date" Type="DateTime" Precision="3" />
-    <Property Name="why" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="SAbDate" Type="DateTime" Precision="3" />
-    <Property Name="SAbTime" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="EAbDate" Type="DateTime" Precision="3" />
-    <Property Name="EAbTime" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="Country" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="CountryName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="BookAbsent" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="Office" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="NameOff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Why2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="DocAbsent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="DocAbsent2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="DocAbsent3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="fileupload" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="fileupload2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="fileupload3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="DataStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="SDay" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="SMonth" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="SYear" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-    <Property Name="MailOff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="statusOff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="PeriodYear" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
-    <Property Name="ansTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="FileText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="MailCC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Docsta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="tblBookingMessenger">
-    <Key>
-      <PropertyRef Name="RecNo" />
-    </Key>
-    <Property Name="RecNo" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="BookingDate" Type="DateTime" Precision="3" />
-    <Property Name="BookingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CusTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ContactPerson" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="CustomerName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="JobType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="JobType2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="JobType3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="JobType4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="JobDesc" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
-    <Property Name="ReceiveComback" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="BookingBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Branch" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Messenger" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="ReceiveBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="StatusJob" Type="Int32" />
-    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-  </EntityType>
-  <EntityType Name="tblCaseJob">
-    <Key>
-      <PropertyRef Name="CaseJobID" />
-    </Key>
-    <Property Name="CaseJobID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CaseName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="tblFileIT">
-    <Key>
-      <PropertyRef Name="FileID" />
-    </Key>
-    <Property Name="FileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Filename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Createby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Createdate" Type="DateTime" Precision="3" />
-    <Property Name="Updateby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Updatedate" Type="DateTime" Precision="3" />
-  </EntityType>
-  <EntityType Name="tblItJobDoc">
-    <Key>
-      <PropertyRef Name="ItJobDocID" />
-    </Key>
-    <Property Name="ItJobDocID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="RequestFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UserIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="RecipientJob" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="AssignJobTo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CloseDate" Type="DateTime" Precision="3" />
-    <Property Name="UserTel" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="CaseJobID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="JobDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="RepairDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="JobStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="Updateby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-    <Property Name="DivisionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="tblMenu">
-    <Key>
-      <PropertyRef Name="Menu" />
-    </Key>
-    <Property Name="Menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-  </EntityType>
-  <EntityType Name="tblMessenger">
-    <Key>
-      <PropertyRef Name="MessDate" />
-      <PropertyRef Name="Name" />
-    </Key>
-    <Property Name="MessDate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TimeOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="MileOut" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="TimeIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="MileIn" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-  </EntityType>
-  <EntityType Name="tblRunningNumber">
-    <Key>
-      <PropertyRef Name="Name" />
-    </Key>
-    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="RunNo" Type="Int32" />
-  </EntityType>
   <EntityType Name="tblUser">
     <Key>
       <PropertyRef Name="UserId" />
@@ -293,34 +15,32 @@
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="Position" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="UserDate" Type="DateTime" Precision="3" />
     <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="CreateDate" Type="DateTime" Precision="3" />
     <Property Name="NickName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Approve1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="Approve2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="StatusID" Type="Int32" />
-    <NavigationProperty Name="Branches" Relationship="Self.FK_Branch_tblUser" FromRole="tblUser" ToRole="Branch" />
   </EntityType>
-  <EntityType Name="tblUserGroup">
-    <Key>
-      <PropertyRef Name="UserGroupCode" />
-    </Key>
-    <Property Name="UserGroupCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="UserGroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UpdateBy" Type="DateTime" Precision="7" />
-  </EntityType>
+  <EntityContainer Name="DB_EaglesInternalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" />
+    <EntitySet Name="tblUserMenu" EntityType="DB_EaglesInternalModel.tblUserMenu" />
+    <EntitySet Name="tblBookingMessenger" EntityType="DB_EaglesInternalModel.tblBookingMessenger" />
+    <EntitySet Name="tblMessenger" EntityType="DB_EaglesInternalModel.tblMessenger" />
+    <EntitySet Name="tblFileITs" EntityType="DB_EaglesInternalModel.tblFileIT" />
+    <EntitySet Name="tblCustomerLists" EntityType="DB_EaglesInternalModel.tblCustomerList" />
+  </EntityContainer>
   <EntityType Name="tblUserMenu">
     <Key>
-      <PropertyRef Name="UserID" />
       <PropertyRef Name="Menu" />
+      <PropertyRef Name="UserID" />
     </Key>
-    <Property Name="UserID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Menu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Read_" Type="Int32" />
     <Property Name="Save_" Type="Int32" />
@@ -329,211 +49,74 @@
     <Property Name="UserBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="LastUpdate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityType Name="tblUsername">
+  <EntityType Name="tblBookingMessenger">
     <Key>
-      <PropertyRef Name="UserName" />
+      <PropertyRef Name="RecNo" />
     </Key>
-    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="CustomerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="UserGroup" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="GroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="UserStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RecNo" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookingDate" Type="DateTime" Precision="0" />
+    <Property Name="BookingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CusTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JobType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobType2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobType3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JobDesc" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveComback" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BookingBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Branch" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Messenger" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StatusJob" Type="Int32" />
+    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="JobType4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblMessenger">
+    <Key>
+      <PropertyRef Name="MessDate" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="MessDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TimeOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MileOut" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TimeIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MileIn" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="EditBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="EditDate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityType Name="Status">
+  <EntityType Name="tblFileIT">
     <Key>
-      <PropertyRef Name="StatusID" />
+      <PropertyRef Name="FileID" />
     </Key>
-    <Property Name="StatusID" Type="Int32" Nullable="false" />
-    <Property Name="StatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Filename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Createby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Createdate" Type="DateTime" Precision="3" />
+    <Property Name="Updateby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Updatedate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityType Name="tblAccessList">
+  <EntityType Name="tblCustomerList">
     <Key>
-      <PropertyRef Name="AccessNo" />
-      <PropertyRef Name="AccessName" />
+      <PropertyRef Name="CustomerName" />
     </Key>
-    <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="AccessName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="RecordDate" Type="DateTime" Precision="3" />
-    <Property Name="TypeofAccess" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="OrderDate" Type="DateTime" Precision="3" />
-    <Property Name="ValueOfAccess" Type="Double" />
-    <Property Name="WarrantyValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="StartWarranty" Type="DateTime" Precision="3" />
-    <Property Name="EndWarranty" Type="DateTime" Precision="3" />
-    <Property Name="PlaceOfWarranty" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="Remark" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
-    <Property Name="ModifyBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="StatusOnStock" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
-    <Property Name="SN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Owner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="AccessAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ReceiveDate" Type="DateTime" Precision="3" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerTel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdateBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="0" />
   </EntityType>
-  <EntityType Name="tblAccessListDetail">
-    <Key>
-      <PropertyRef Name="AccessNo" />
-      <PropertyRef Name="ItemNo" />
-      <PropertyRef Name="TypeOfDevice" />
-      <PropertyRef Name="NameOfDevice" />
-    </Key>
-    <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TypeOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="NameOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Price" Type="Double" />
-    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="WarrantyValue" Type="Double" />
-    <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="StartWarranty" Type="DateTime" Precision="3" />
-    <Property Name="EndWarranty" Type="DateTime" Precision="3" />
-    <Property Name="PlaceOfWarranty" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="CreateDate" Type="DateTime" Precision="3" />
-    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
-    <Property Name="ModifyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="tblDivision">
-    <Key>
-      <PropertyRef Name="DivisionId" />
-    </Key>
-    <Property Name="DivisionId" Type="Int32" Nullable="false" />
-    <Property Name="DivisionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <EntityType Name="tblIDRecording">
-    <Key>
-      <PropertyRef Name="recordingID" />
-    </Key>
-    <Property Name="recordingID" Type="Int32" Nullable="false" />
-    <Property Name="recordingDate" Type="DateTime" Precision="0" />
-    <Property Name="recordingTime" Type="Time" Precision="7" />
-    <Property Name="problems" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="reason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="recording_Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
-  <Association Name="FK_Branch_tblUser">
-    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
-    <End Role="Branch" Type="Self.Branch" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tblUser">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Branch">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Side_Branch">
-    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
-    <End Role="Side" Type="Self.Side" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Branch">
-        <PropertyRef Name="BranchID" />
-      </Principal>
-      <Dependent Role="Side">
-        <PropertyRef Name="BranchID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Department_Side">
-    <End Role="Side" Type="Self.Side" Multiplicity="0..1" />
-    <End Role="Department" Type="Self.Department" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Side">
-        <PropertyRef Name="SideID" />
-      </Principal>
-      <Dependent Role="Department">
-        <PropertyRef Name="SideID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Position_Department">
-    <End Role="Department" Type="Self.Department" Multiplicity="0..1" />
-    <End Role="Position" Type="Self.Position" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Department">
-        <PropertyRef Name="DepartmentID" />
-      </Principal>
-      <Dependent Role="Position">
-        <PropertyRef Name="DepartmentID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Document_Document">
-    <End Role="Document" Type="Self.Document" Multiplicity="1" />
-    <End Role="Document1" Type="Self.Document" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Document">
-        <PropertyRef Name="Name" />
-      </Principal>
-      <Dependent Role="Document1">
-        <PropertyRef Name="Name" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="DB_EaglesInternalEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Branches" EntityType="Self.Branch" />
-    <EntitySet Name="Departments" EntityType="Self.Department" />
-    <EntitySet Name="Documents" EntityType="Self.Document" />
-    <EntitySet Name="M_Document" EntityType="Self.M_Document" />
-    <EntitySet Name="Positions" EntityType="Self.Position" />
-    <EntitySet Name="Referal_Doc" EntityType="Self.Referal_Doc" />
-    <EntitySet Name="RunNoes" EntityType="Self.RunNo" />
-    <EntitySet Name="Sides" EntityType="Self.Side" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <EntitySet Name="tblAbsents" EntityType="Self.tblAbsent" />
-    <EntitySet Name="tblBookingMessengers" EntityType="Self.tblBookingMessenger" />
-    <EntitySet Name="tblCaseJobs" EntityType="Self.tblCaseJob" />
-    <EntitySet Name="tblFileITs" EntityType="Self.tblFileIT" />
-    <EntitySet Name="tblItJobDocs" EntityType="Self.tblItJobDoc" />
-    <EntitySet Name="tblMenus" EntityType="Self.tblMenu" />
-    <EntitySet Name="tblMessengers" EntityType="Self.tblMessenger" />
-    <EntitySet Name="tblRunningNumbers" EntityType="Self.tblRunningNumber" />
-    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
-    <EntitySet Name="tblUserGroups" EntityType="Self.tblUserGroup" />
-    <EntitySet Name="tblUserMenus" EntityType="Self.tblUserMenu" />
-    <EntitySet Name="tblUsernames" EntityType="Self.tblUsername" />
-    <EntitySet Name="Status" EntityType="Self.Status" />
-    <EntitySet Name="tblAccessLists" EntityType="Self.tblAccessList" />
-    <EntitySet Name="tblAccessListDetails" EntityType="Self.tblAccessListDetail" />
-    <EntitySet Name="tblDivisions" EntityType="Self.tblDivision" />
-    <EntitySet Name="tblIDRecordings" EntityType="Self.tblIDRecording" />
-    <AssociationSet Name="FK_Branch_tblUser" Association="Self.FK_Branch_tblUser">
-      <End Role="tblUser" EntitySet="tblUsers" />
-      <End Role="Branch" EntitySet="Branches" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Side_Branch" Association="Self.FK_Side_Branch">
-      <End Role="Branch" EntitySet="Branches" />
-      <End Role="Side" EntitySet="Sides" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Department_Side" Association="Self.FK_Department_Side">
-      <End Role="Side" EntitySet="Sides" />
-      <End Role="Department" EntitySet="Departments" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Position_Department" Association="Self.FK_Position_Department">
-      <End Role="Department" EntitySet="Departments" />
-      <End Role="Position" EntitySet="Positions" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Document_Document" Association="Self.FK_Document_Document">
-      <End Role="Document" EntitySet="Documents" />
-      <End Role="Document1" EntitySet="Documents" />
-    </AssociationSet>
-  </EntityContainer>
 </Schema>

@@ -39,7 +39,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:WebMessenger.Booking.txtDate2">
-<<<<<<< HEAD
 	<summary>
 txtDate2 control.
 </summary>
@@ -58,90 +57,36 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:WebMessenger.Booking.ddlBranchSearch">
 	<summary>
 ddlBranchSearch control.
-=======
-	<summary>
-txtDate2 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.Booking.ddlMessengerSearch">
 	<summary>
 ddlMessengerSearch control.
-=======
-</member><member name="F:WebMessenger.Booking.CalendarExtender2">
-	<summary>
-CalendarExtender2 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.Booking.Button1">
 	<summary>
 Button1 control.
-=======
-</member><member name="F:WebMessenger.Booking.ddlBranchSearch">
-	<summary>
-ddlBranchSearch control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.Booking.UpModal">
-	<summary>
-UpModal control.
-=======
-</member><member name="F:WebMessenger.Booking.ddlMessengerSearch">
-	<summary>
-ddlMessengerSearch control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.Booking.GridView1">
-	<summary>
-GridView1 control.
-=======
-</member><member name="F:WebMessenger.Booking.Button1">
-	<summary>
-Button1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.Booking.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-=======
 </member><member name="F:WebMessenger.Booking.dgvBooking">
 	<summary>
 dgvBooking control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.form1">
-=======
 </member><member name="F:WebMessenger.Booking.plbook">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 plbook control.
 </summary>
@@ -149,11 +94,7 @@ plbook control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.ScriptManager1">
-=======
 </member><member name="F:WebMessenger.Booking.upbook">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 upbook control.
 </summary>
@@ -161,107 +102,151 @@ upbook control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.UpdatePanel1">
-=======
 </member><member name="F:WebMessenger.Booking.txtRecno">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-UpdatePanel1 control.
+txtRecno control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.txtDate1">
-=======
 </member><member name="F:WebMessenger.Booking.txtBookingDate">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-txtDate1 control.
+txtBookingDate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.CalendarExtender1">
-=======
 </member><member name="F:WebMessenger.Booking.txtBookingDate_CalendarExtender">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-CalendarExtender1 control.
+txtBookingDate_CalendarExtender control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.Label1">
-=======
 </member><member name="F:WebMessenger.Booking.txtBookingTime">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-Label1 control.
+txtBookingTime control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.ddlMess">
-=======
 </member><member name="F:WebMessenger.Booking.txtBookingTime_MaskedEditExtender">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-ddlMess control.
+txtBookingTime_MaskedEditExtender control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.Button1">
-=======
 </member><member name="F:WebMessenger.Booking.ddlBranch">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-Button1 control.
+ddlBranch control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportViewer1">
-=======
 </member><member name="F:WebMessenger.Booking.txtCustomerName">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-CrystalReportViewer1 control.
+txtCustomerName control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportSource1">
-=======
 </member><member name="F:WebMessenger.Booking.txtCusTel">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
-CrystalReportSource1 control.
+txtCusTel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMessengerBooking.form1">
-=======
 </member><member name="F:WebMessenger.Booking.txtContactPerson">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+	<summary>
+txtContactPerson control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.txtLocation">
+	<summary>
+txtLocation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.chkJobType1">
+	<summary>
+chkJobType1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.chkJobType2">
+	<summary>
+chkJobType2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.chkJobType3">
+	<summary>
+chkJobType3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.txtJobDesc">
+	<summary>
+txtJobDesc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.txtReceiveComback">
+	<summary>
+txtReceiveComback control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.txtBookingBy">
+	<summary>
+txtBookingBy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.txtReceiveby">
+	<summary>
+txtReceiveby control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Booking.ddlMessenger">
+	<summary>
+ddlMessenger control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMileMessenger.form1">
 	<summary>
 form1 control.
 </summary>
@@ -269,11 +254,7 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMessengerBooking.ScriptManager1">
-=======
-</member><member name="F:WebMessenger.Booking.txtLocation">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+</member><member name="F:WebMessenger.RptMileMessenger.ScriptManager1">
 	<summary>
 ScriptManager1 control.
 </summary>
@@ -281,11 +262,7 @@ ScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMessengerBooking.UpdatePanel1">
-=======
-</member><member name="F:WebMessenger.Booking.chkJobType1">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+</member><member name="F:WebMessenger.RptMileMessenger.UpdatePanel1">
 	<summary>
 UpdatePanel1 control.
 </summary>
@@ -293,11 +270,7 @@ UpdatePanel1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMessengerBooking.txtDate1">
-=======
-</member><member name="F:WebMessenger.Booking.chkJobType2">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+</member><member name="F:WebMessenger.RptMileMessenger.txtDate1">
 	<summary>
 txtDate1 control.
 </summary>
@@ -305,11 +278,7 @@ txtDate1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.RptMessengerBooking.CalendarExtender1">
-=======
-</member><member name="F:WebMessenger.Booking.chkJobType3">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+</member><member name="F:WebMessenger.RptMileMessenger.CalendarExtender1">
 	<summary>
 CalendarExtender1 control.
 </summary>
@@ -317,11 +286,87 @@ CalendarExtender1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
+</member><member name="F:WebMessenger.RptMileMessenger.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMileMessenger.ddlMess">
+	<summary>
+ddlMess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMileMessenger.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportViewer1">
+	<summary>
+CrystalReportViewer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportSource1">
+	<summary>
+CrystalReportSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMessengerBooking.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMessengerBooking.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMessengerBooking.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMessengerBooking.txtDate1">
+	<summary>
+txtDate1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.RptMessengerBooking.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:WebMessenger.RptMessengerBooking.txtDate2">
-=======
-</member><member name="F:WebMessenger.Booking.txtJobDesc">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 txtDate2 control.
 </summary>
@@ -329,11 +374,7 @@ txtDate2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.RptMessengerBooking.CalendarExtender2">
-=======
-</member><member name="F:WebMessenger.Booking.txtReceiveComback">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 CalendarExtender2 control.
 </summary>
@@ -341,11 +382,7 @@ CalendarExtender2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.RptMessengerBooking.Button1">
-=======
-</member><member name="F:WebMessenger.Booking.txtBookingBy">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 Button1 control.
 </summary>
@@ -353,11 +390,7 @@ Button1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.RptMessengerBooking.CrystalReportViewer1">
-=======
-</member><member name="F:WebMessenger.Booking.txtReceiveby">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 CrystalReportViewer1 control.
 </summary>
@@ -365,11 +398,7 @@ CrystalReportViewer1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.RptMessengerBooking.CrystalReportSource1">
-=======
-</member><member name="F:WebMessenger.Booking.ddlMessenger">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 	<summary>
 CrystalReportSource1 control.
 </summary>
@@ -377,7 +406,6 @@ CrystalReportSource1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="P:WebMessenger.My.MyWebExtension.Computer">
 	<summary>
  Returns information about the host computer.
@@ -434,107 +462,38 @@ Represents a strongly typed in-memory cache of data.
 </member><member name="F:WebMessenger.MasterPage.head">
 	<summary>
 head control.
-=======
-</member><member name="F:WebMessenger.RptMileMessenger.form1">
-	<summary>
-form1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.MasterPage.lblUser">
 	<summary>
 lblUser control.
-=======
-</member><member name="F:WebMessenger.RptMileMessenger.ScriptManager1">
-	<summary>
-ScriptManager1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.MasterPage.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
-=======
-</member><member name="F:WebMessenger.RptMileMessenger.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.EditBooking.form1">
 	<summary>
 form1 control.
-=======
-</member><member name="F:WebMessenger.RptMileMessenger.txtDate1">
-	<summary>
-txtDate1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
 </member><member name="F:WebMessenger.EditBooking.ScriptManager1">
 	<summary>
 ScriptManager1 control.
-=======
-</member><member name="F:WebMessenger.RptMileMessenger.CalendarExtender1">
-	<summary>
-CalendarExtender1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.RptMileMessenger.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.RptMileMessenger.ddlMess">
-	<summary>
-ddlMess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.RptMileMessenger.Button1">
-	<summary>
-Button1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportViewer1">
-	<summary>
-CrystalReportViewer1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.RptMileMessenger.CrystalReportSource1">
-	<summary>
-CrystalReportSource1 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
@@ -620,252 +579,6 @@ txtLocation control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.chkJobType1">
-=======
-</member><member name="P:WebMessenger.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:WebMessenger.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:WebMessenger.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:WebMessenger.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:WebMessenger.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:WebMessenger.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="T:WebMessenger.DataSet1.dtMessengerDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WebMessenger.DataSet1.dtMileMessengerDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:WebMessenger.DataSet1.dtMessengerRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WebMessenger.DataSet1.dtMileMessengerRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:WebMessenger.DataSet1.dtMessengerRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WebMessenger.DataSet1.dtMileMessengerRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:WebMessenger.DataSet1">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="F:WebMessenger.MasterPage.head">
-	<summary>
-head control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.MasterPage.lblUser">
-	<summary>
-lblUser control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.MasterPage.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.EditBooking.form1">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-	<summary>
-chkJobType1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.chkJobType2">
-=======
-</member><member name="F:WebMessenger.EditBooking.ScriptManager1">
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-	<summary>
-chkJobType2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.chkJobType3">
-	<summary>
-chkJobType3 control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtRecno">
-	<summary>
-txtRecno control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.txtJobDesc">
-	<summary>
-txtJobDesc control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtBookingDate">
-	<summary>
-txtBookingDate control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.txtReceiveComback">
-	<summary>
-txtReceiveComback control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtBookingDate_CalendarExtender">
-	<summary>
-txtBookingDate_CalendarExtender control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.txtBookingBy">
-	<summary>
-txtBookingBy control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtBookingTime">
-	<summary>
-txtBookingTime control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.txtReceiveby">
-	<summary>
-txtReceiveby control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtBookingTime_MaskedEditExtender">
-	<summary>
-txtBookingTime_MaskedEditExtender control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.ddlMessenger">
-	<summary>
-ddlMessenger control.
-=======
-</member><member name="F:WebMessenger.EditBooking.ddlBranch">
-	<summary>
-ddlBranch control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.chkStatus">
-	<summary>
-chkStatus control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtCustomerName">
-	<summary>
-txtCustomerName control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.RadioButtonList1">
-	<summary>
-RadioButtonList1 control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtCusTel">
-	<summary>
-txtCusTel control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.txtRemark">
-	<summary>
-txtRemark control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtContactPerson">
-	<summary>
-txtContactPerson control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.Importfile">
-	<summary>
-Importfile control.
-=======
-</member><member name="F:WebMessenger.EditBooking.txtLocation">
-	<summary>
-txtLocation control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-<<<<<<< HEAD
-</member><member name="F:WebMessenger.EditBooking.btnSaveChange">
-	<summary>
-btnSaveChange control.
-=======
 </member><member name="F:WebMessenger.EditBooking.chkJobType1">
 	<summary>
 chkJobType1 control.
@@ -885,14 +598,11 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:WebMessenger.EditBooking.chkJobType3">
 	<summary>
 chkJobType3 control.
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-=======
 </member><member name="F:WebMessenger.EditBooking.txtJobDesc">
 	<summary>
 txtJobDesc control.
@@ -989,9 +699,6 @@ btnSaveChange control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
->>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
-=======
 </member><member name="F:WebMessenger.EditBooking.plImage">
 	<summary>
 plImage control.
@@ -1016,7 +723,6 @@ Image1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
->>>>>>> origin/WebMessenger
 </member><member name="F:WebMessenger.Login.ScriptManager1">
 	<summary>
 ScriptManager1 control.

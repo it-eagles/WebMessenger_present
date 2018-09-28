@@ -1,294 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DB_EaglesInternalModelStoreContainer" CdmEntityContainer="DB_EaglesInternalEntities">
-    <EntitySetMapping Name="Branches">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Branch">
-        <MappingFragment StoreEntitySet="Branch">
-          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
-          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Departments">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Department">
-        <MappingFragment StoreEntitySet="Department">
-          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
-          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="SideID" ColumnName="SideID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Documents">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Document">
-        <MappingFragment StoreEntitySet="Document">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Store" ColumnName="Store" />
-          <ScalarProperty Name="Category" ColumnName="Category" />
-          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="UserDate" ColumnName="UserDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="M_Document">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.M_Document">
-        <MappingFragment StoreEntitySet="M_Document">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Type" ColumnName="Type" />
-          <ScalarProperty Name="Userby" ColumnName="Userby" />
-          <ScalarProperty Name="Userdate" ColumnName="Userdate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Positions">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Position">
-        <MappingFragment StoreEntitySet="Position">
-          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
-          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Referal_Doc">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Referal_Doc">
-        <MappingFragment StoreEntitySet="Referal_Doc">
-          <ScalarProperty Name="ReflID" ColumnName="ReflID" />
-          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
-          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
-          <ScalarProperty Name="Department" ColumnName="Department" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="Refdate" ColumnName="Refdate" />
-          <ScalarProperty Name="Source" ColumnName="Source" />
-          <ScalarProperty Name="Remark" ColumnName="Remark" />
-          <ScalarProperty Name="Company" ColumnName="Company" />
-          <ScalarProperty Name="Person" ColumnName="Person" />
-          <ScalarProperty Name="Tel" ColumnName="Tel" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Line" ColumnName="Line" />
-          <ScalarProperty Name="Detail" ColumnName="Detail" />
-          <ScalarProperty Name="Servicetype" ColumnName="Servicetype" />
-          <ScalarProperty Name="Typeremark" ColumnName="Typeremark" />
-          <ScalarProperty Name="Commodity" ColumnName="Commodity" />
-          <ScalarProperty Name="Weight" ColumnName="Weight" />
-          <ScalarProperty Name="Volume" ColumnName="Volume" />
-          <ScalarProperty Name="Dimension" ColumnName="Dimension" />
-          <ScalarProperty Name="Origin" ColumnName="Origin" />
-          <ScalarProperty Name="Destination" ColumnName="Destination" />
-          <ScalarProperty Name="Special" ColumnName="Special" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="RunNoes">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.RunNo">
-        <MappingFragment StoreEntitySet="RunNo">
-          <ScalarProperty Name="NO" ColumnName="NO" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="RunNo1" ColumnName="RunNo" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Sides">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Side">
-        <MappingFragment StoreEntitySet="Side">
-          <ScalarProperty Name="SideID" ColumnName="SideID" />
-          <ScalarProperty Name="SideName" ColumnName="SideName" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblAbsents">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblAbsent">
-        <MappingFragment StoreEntitySet="tblAbsent">
-          <ScalarProperty Name="IDAbsent" ColumnName="IDAbsent" />
-          <ScalarProperty Name="CodeID" ColumnName="CodeID" />
-          <ScalarProperty Name="firstname" ColumnName="firstname" />
-          <ScalarProperty Name="SentDate" ColumnName="SentDate" />
-          <ScalarProperty Name="SentTo" ColumnName="SentTo" />
-          <ScalarProperty Name="SentTo1" ColumnName="SentTo1" />
-          <ScalarProperty Name="SentTo2" ColumnName="SentTo2" />
-          <ScalarProperty Name="Department" ColumnName="Department" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Sections" ColumnName="Sections" />
-          <ScalarProperty Name="numday" ColumnName="numday" />
-          <ScalarProperty Name="numhr" ColumnName="numhr" />
-          <ScalarProperty Name="nummin" ColumnName="nummin" />
-          <ScalarProperty Name="TypeAbsent" ColumnName="TypeAbsent" />
-          <ScalarProperty Name="formatAbsent" ColumnName="formatAbsent" />
-          <ScalarProperty Name="approvedate" ColumnName="approvedate" />
-          <ScalarProperty Name="approve1date" ColumnName="approve1date" />
-          <ScalarProperty Name="why" ColumnName="why" />
-          <ScalarProperty Name="SAbDate" ColumnName="SAbDate" />
-          <ScalarProperty Name="SAbTime" ColumnName="SAbTime" />
-          <ScalarProperty Name="EAbDate" ColumnName="EAbDate" />
-          <ScalarProperty Name="EAbTime" ColumnName="EAbTime" />
-          <ScalarProperty Name="Country" ColumnName="Country" />
-          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
-          <ScalarProperty Name="BookAbsent" ColumnName="BookAbsent" />
-          <ScalarProperty Name="Office" ColumnName="Office" />
-          <ScalarProperty Name="NameOff" ColumnName="NameOff" />
-          <ScalarProperty Name="Why2" ColumnName="Why2" />
-          <ScalarProperty Name="DocAbsent" ColumnName="DocAbsent" />
-          <ScalarProperty Name="DocAbsent2" ColumnName="DocAbsent2" />
-          <ScalarProperty Name="DocAbsent3" ColumnName="DocAbsent3" />
-          <ScalarProperty Name="fileupload" ColumnName="fileupload" />
-          <ScalarProperty Name="fileupload2" ColumnName="fileupload2" />
-          <ScalarProperty Name="fileupload3" ColumnName="fileupload3" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="DataStatus" ColumnName="DataStatus" />
-          <ScalarProperty Name="SDay" ColumnName="SDay" />
-          <ScalarProperty Name="SMonth" ColumnName="SMonth" />
-          <ScalarProperty Name="SYear" ColumnName="SYear" />
-          <ScalarProperty Name="MailOff" ColumnName="MailOff" />
-          <ScalarProperty Name="statusOff" ColumnName="statusOff" />
-          <ScalarProperty Name="PeriodYear" ColumnName="PeriodYear" />
-          <ScalarProperty Name="ansTime" ColumnName="ansTime" />
-          <ScalarProperty Name="FileText" ColumnName="FileText" />
-          <ScalarProperty Name="comment" ColumnName="comment" />
-          <ScalarProperty Name="MailCC" ColumnName="MailCC" />
-          <ScalarProperty Name="Docsta" ColumnName="Docsta" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblBookingMessengers">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblBookingMessenger">
-        <MappingFragment StoreEntitySet="tblBookingMessenger">
-          <ScalarProperty Name="RecNo" ColumnName="RecNo" />
-          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
-          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
-          <ScalarProperty Name="CusTel" ColumnName="CusTel" />
-          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
-          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-          <ScalarProperty Name="Location" ColumnName="Location" />
-          <ScalarProperty Name="JobType1" ColumnName="JobType1" />
-          <ScalarProperty Name="JobType2" ColumnName="JobType2" />
-          <ScalarProperty Name="JobType3" ColumnName="JobType3" />
-          <ScalarProperty Name="JobType4" ColumnName="JobType4" />
-          <ScalarProperty Name="JobDesc" ColumnName="JobDesc" />
-          <ScalarProperty Name="ReceiveComback" ColumnName="ReceiveComback" />
-          <ScalarProperty Name="BookingBy" ColumnName="BookingBy" />
-          <ScalarProperty Name="Branch" ColumnName="Branch" />
-          <ScalarProperty Name="Messenger" ColumnName="Messenger" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Remark" ColumnName="Remark" />
-          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
-          <ScalarProperty Name="StatusJob" ColumnName="StatusJob" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblCaseJobs">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblCaseJob">
-        <MappingFragment StoreEntitySet="tblCaseJob">
-          <ScalarProperty Name="CaseJobID" ColumnName="CaseJobID" />
-          <ScalarProperty Name="CaseName" ColumnName="CaseName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblFileITs">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblFileIT">
-        <MappingFragment StoreEntitySet="tblFileIT">
-          <ScalarProperty Name="FileID" ColumnName="FileID" />
-          <ScalarProperty Name="Filename" ColumnName="Filename" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="Createby" ColumnName="Createby" />
-          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
-          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
-          <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblItJobDocs">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblItJobDoc">
-        <MappingFragment StoreEntitySet="tblItJobDoc">
-          <ScalarProperty Name="ItJobDocID" ColumnName="ItJobDocID" />
-          <ScalarProperty Name="RequestFrom" ColumnName="RequestFrom" />
-          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
-          <ScalarProperty Name="RecipientJob" ColumnName="RecipientJob" />
-          <ScalarProperty Name="Position" ColumnName="Position" />
-          <ScalarProperty Name="AssignJobTo" ColumnName="AssignJobTo" />
-          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
-          <ScalarProperty Name="UserTel" ColumnName="UserTel" />
-          <ScalarProperty Name="CaseJobID" ColumnName="CaseJobID" />
-          <ScalarProperty Name="JobDetail" ColumnName="JobDetail" />
-          <ScalarProperty Name="RepairDetail" ColumnName="RepairDetail" />
-          <ScalarProperty Name="Comment" ColumnName="Comment" />
-          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblMenus">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblMenu">
-        <MappingFragment StoreEntitySet="tblMenu">
-          <ScalarProperty Name="Menu" ColumnName="Menu" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblMessengers">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblMessenger">
-        <MappingFragment StoreEntitySet="tblMessenger">
-          <ScalarProperty Name="MessDate" ColumnName="MessDate" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
-          <ScalarProperty Name="MileOut" ColumnName="MileOut" />
-          <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
-          <ScalarProperty Name="MileIn" ColumnName="MileIn" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblRunningNumbers">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblRunningNumber">
-        <MappingFragment StoreEntitySet="tblRunningNumber">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="RunNo" ColumnName="RunNo" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblUsers">
+    <EntitySetMapping Name="tblUser">
       <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUser">
         <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="Approve2" ColumnName="Approve2" />
+          <ScalarProperty Name="Approve1" ColumnName="Approve1" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Prefix_thai" ColumnName="Prefix_thai" />
@@ -300,142 +20,99 @@
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Position" ColumnName="Position" />
           <ScalarProperty Name="Dept" ColumnName="Dept" />
-          <ScalarProperty Name="Section" ColumnName="Section" />
           <ScalarProperty Name="Branch" ColumnName="Branch" />
           <ScalarProperty Name="UserBy" ColumnName="UserBy" />
           <ScalarProperty Name="UserDate" ColumnName="UserDate" />
           <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
           <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="NickName" ColumnName="NickName" />
-          <ScalarProperty Name="Approve1" ColumnName="Approve1" />
-          <ScalarProperty Name="Approve2" ColumnName="Approve2" />
-          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblUserGroups">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUserGroup">
-        <MappingFragment StoreEntitySet="tblUserGroup">
-          <ScalarProperty Name="UserGroupCode" ColumnName="UserGroupCode" />
-          <ScalarProperty Name="UserGroupName" ColumnName="UserGroupName" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
-          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblUserMenus">
+    <EntitySetMapping Name="tblUserMenu">
       <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUserMenu">
         <MappingFragment StoreEntitySet="tblUserMenu">
           <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="Menu" ColumnName="Menu" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="Read_" ColumnName="Read_" />
-          <ScalarProperty Name="Save_" ColumnName="Save_" />
-          <ScalarProperty Name="Edit_" ColumnName="Edit_" />
-          <ScalarProperty Name="Delete_" ColumnName="Delete_" />
-          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
           <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="UserBy" ColumnName="UserBy" />
+          <ScalarProperty Name="Delete_" ColumnName="Delete_" />
+          <ScalarProperty Name="Edit_" ColumnName="Edit_" />
+          <ScalarProperty Name="Save_" ColumnName="Save_" />
+          <ScalarProperty Name="Read_" ColumnName="Read_" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Menu" ColumnName="Menu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblUsernames">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblUsername">
-        <MappingFragment StoreEntitySet="tblUsername">
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
-          <ScalarProperty Name="UserGroup" ColumnName="UserGroup" />
-          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
-          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+    <EntitySetMapping Name="tblBookingMessenger">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblBookingMessenger">
+        <MappingFragment StoreEntitySet="tblBookingMessenger">
+          <ScalarProperty Name="JobType4" ColumnName="JobType4" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
           <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="EditBy" ColumnName="EditBy" />
-          <ScalarProperty Name="EditDate" ColumnName="EditDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Status">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.Status">
-        <MappingFragment StoreEntitySet="Status">
-          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
-          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblAccessLists">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblAccessList">
-        <MappingFragment StoreEntitySet="tblAccessList">
-          <ScalarProperty Name="AccessNo" ColumnName="AccessNo" />
-          <ScalarProperty Name="AccessName" ColumnName="AccessName" />
-          <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
-          <ScalarProperty Name="TypeofAccess" ColumnName="TypeofAccess" />
-          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
-          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
-          <ScalarProperty Name="ValueOfAccess" ColumnName="ValueOfAccess" />
-          <ScalarProperty Name="WarrantyValue" ColumnName="WarrantyValue" />
-          <ScalarProperty Name="WarrantyUnit" ColumnName="WarrantyUnit" />
-          <ScalarProperty Name="StartWarranty" ColumnName="StartWarranty" />
-          <ScalarProperty Name="EndWarranty" ColumnName="EndWarranty" />
-          <ScalarProperty Name="PlaceOfWarranty" ColumnName="PlaceOfWarranty" />
-          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
-          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="StatusJob" ColumnName="StatusJob" />
+          <ScalarProperty Name="ReceiveBy" ColumnName="ReceiveBy" />
           <ScalarProperty Name="Remark" ColumnName="Remark" />
-          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
-          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
-          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
-          <ScalarProperty Name="StatusOnStock" ColumnName="StatusOnStock" />
-          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Messenger" ColumnName="Messenger" />
           <ScalarProperty Name="Branch" ColumnName="Branch" />
-          <ScalarProperty Name="Department" ColumnName="Department" />
-          <ScalarProperty Name="Owner" ColumnName="Owner" />
-          <ScalarProperty Name="AccessAccount" ColumnName="AccessAccount" />
-          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="BookingBy" ColumnName="BookingBy" />
+          <ScalarProperty Name="ReceiveComback" ColumnName="ReceiveComback" />
+          <ScalarProperty Name="JobDesc" ColumnName="JobDesc" />
+          <ScalarProperty Name="JobType3" ColumnName="JobType3" />
+          <ScalarProperty Name="JobType2" ColumnName="JobType2" />
+          <ScalarProperty Name="JobType1" ColumnName="JobType1" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CusTel" ColumnName="CusTel" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="RecNo" ColumnName="RecNo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblAccessListDetails">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblAccessListDetail">
-        <MappingFragment StoreEntitySet="tblAccessListDetail">
-          <ScalarProperty Name="AccessNo" ColumnName="AccessNo" />
-          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
-          <ScalarProperty Name="TypeOfDevice" ColumnName="TypeOfDevice" />
-          <ScalarProperty Name="NameOfDevice" ColumnName="NameOfDevice" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
-          <ScalarProperty Name="WarrantyValue" ColumnName="WarrantyValue" />
-          <ScalarProperty Name="WarrantyUnit" ColumnName="WarrantyUnit" />
-          <ScalarProperty Name="StartWarranty" ColumnName="StartWarranty" />
-          <ScalarProperty Name="EndWarranty" ColumnName="EndWarranty" />
-          <ScalarProperty Name="PlaceOfWarranty" ColumnName="PlaceOfWarranty" />
-          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
-          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+    <EntitySetMapping Name="tblMessenger">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblMessenger">
+        <MappingFragment StoreEntitySet="tblMessenger">
           <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
           <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
-          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
-          <ScalarProperty Name="ModifyName" ColumnName="ModifyName" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="MileIn" ColumnName="MileIn" />
+          <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
+          <ScalarProperty Name="MileOut" ColumnName="MileOut" />
+          <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MessDate" ColumnName="MessDate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblDivisions">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblDivision">
-        <MappingFragment StoreEntitySet="tblDivision">
-          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
-          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+    <EntitySetMapping Name="tblFileITs">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblFileIT">
+        <MappingFragment StoreEntitySet="tblFileIT">
+          <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
+          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblIDRecordings">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblIDRecording">
-        <MappingFragment StoreEntitySet="tblIDRecording">
-          <ScalarProperty Name="recordingID" ColumnName="recordingID" />
-          <ScalarProperty Name="recordingDate" ColumnName="recordingDate" />
-          <ScalarProperty Name="recordingTime" ColumnName="recordingTime" />
-          <ScalarProperty Name="problems" ColumnName="problems" />
-          <ScalarProperty Name="reason" ColumnName="reason" />
-          <ScalarProperty Name="branch" ColumnName="branch" />
-          <ScalarProperty Name="recording_Time" ColumnName="recording_Time" />
+    <EntitySetMapping Name="tblCustomerLists">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblCustomerList">
+        <MappingFragment StoreEntitySet="tblCustomerList">
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CustomerTel" ColumnName="CustomerTel" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
