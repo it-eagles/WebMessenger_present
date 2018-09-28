@@ -17,7 +17,7 @@
                         <label class="col-md-2 control-label text-left" for="txtBookingDate">ประจำวันที่</label>
                         <div class="col-md-6">
 
-                            <asp:TextBox ID="txtBookingDate" CssClass="form-control input-sm" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox ID="txtBookingDate" CssClass="form-control " runat="server" autocomplete="off"></asp:TextBox>
                             <asp:CalendarExtender ID="CalendarExtender1" runat="server" Enabled="True" TargetControlID="txtBookingDate" Format="dd/MM/yyyy"></asp:CalendarExtender>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                         <label class="col-md-2 control-label" for="txtBookingTime">เวลา</label>
                         <div class="col-md-6">
                             <%--      <input type="time" class="input-medium" runat="server" id="txtBookingTime" />--%>
-                            <asp:TextBox ID="txtBookingTime" CssClass="form-control input-sm" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox ID="txtBookingTime" CssClass="form-control " runat="server" autocomplete="off"></asp:TextBox>
                             <asp:MaskedEditExtender ID="MaskedEditExtender1" runat="server"
                                 TargetControlID="txtBookingTime" AcceptAMPM="false" MaskType="Time"
                                 Mask="99:99" AutoComplete="False" />
@@ -35,7 +35,7 @@
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="ddlBranch">สาขา</label>
                         <div class="col-md-6">
-                            <asp:DropDownList ID="ddlBranch" runat="server" CssClass="form-control input-sm">
+                            <asp:DropDownList ID="ddlBranch" runat="server" CssClass="form-control ">
                                 <asp:ListItem></asp:ListItem>
                                 <asp:ListItem>SPM</asp:ListItem>
                                 <asp:ListItem>PTN</asp:ListItem>
@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtCustomerName">บริษัทผู้ติดต่อ</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtCustomerName" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtCustomerName" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                         <div class="col-md-3">
                             <button runat="server" class="btn btn-sm" type="button" autofocus="autofocus" onserverclick="Unnamed_ServerClick"><i class="fa fa-search"></i></button>
@@ -58,19 +58,19 @@
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtCusTel">โทร</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtCusTel" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtCusTel" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="txtContactPerson">ผู้ติดต่อ</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtContactPerson" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtContactPerson" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtLocation">ที่อยู่</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtLocation" runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtLocation" runat="server" TextMode="MultiLine"></asp:TextBox>
 
                         </div>
                     </div>
@@ -96,25 +96,25 @@
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtJobDesc">รายละเอียดงาน</label>
                         <div class="col-md-6">
-                            <asp:TextBox ID="txtJobDesc" runat="server" Height="78px" TextMode="MultiLine" CssClass="form-control input-sm"></asp:TextBox>
+                            <asp:TextBox ID="txtJobDesc" runat="server" Height="78px" TextMode="MultiLine" CssClass="form-control "></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtReceiveComback">สิ่งที่ต้องรับกลับ</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtReceiveComback" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtReceiveComback" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2  control-label" for="txtBookingBy">ผู้สั่งงาน</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtBookingBy" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtBookingBy" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="txtReceiveby">ผู้รับเอกสาร</label>
                         <div class="col-md-6">
-                            <asp:TextBox CssClass="form-control input-sm" ID="txtReceiveby" runat="server" autocomplete="off"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control " ID="txtReceiveby" runat="server" autocomplete="off"></asp:TextBox>
                         </div>
                     </div>
                     <div class="form-group">
@@ -123,6 +123,12 @@
                             <input id="Reset1" class="btn" type="reset" value="Reset" />&nbsp;&nbsp;
                         </div>
                     </div>
+                <%--    <div class="form-group">
+                        <div class="col-md-3">
+                            <input runat="server" id="txtTest" class="form-control" value="" autofocus="autofocus"/>
+                            <input runat="server" id="txtTest1" class="form-control" value="" autofocus="autofocus"/>
+                        </div>
+                    </div>--%>
                 </div>
 
                 <%--             <div class="form-group">
@@ -202,7 +208,6 @@
                                 <tr>
                                     <td>
                                         <asp:LinkButton ID="lnkSearch" runat="server" OnClick="lnkSearch_Click" CssClass="btn"><i class="fa fa-hand-pointer-o"></i></asp:LinkButton></td>
-
                                     <td>
                                         <asp:Label ID="lblCustomerName" runat="server" Text="Label"></asp:Label></td>
 
@@ -237,6 +242,8 @@
                 </div>
             </div>
         </asp:Panel>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
         <script type="text/javascript">
             function Confirm() {
                 var confirm_value = document.createElement("INPUT");
@@ -250,5 +257,14 @@
                 document.forms[0].appendChild(confirm_value);
             }
         </script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#txtTest").keyup(function () {
+                var value = $(this).val();
+                $("#txtTest1").text(value);
+            }).keyup();
+            });
+</script>
     </form>
 </asp:Content>

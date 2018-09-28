@@ -95,29 +95,191 @@ Partial Public Class Booking
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''UpModal control.
+    '''dgvBooking control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents UpModal As Global.System.Web.UI.UpdatePanel
+    Protected WithEvents dgvBooking As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
-    '''GridView1 control.
+    '''plbook control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents plbook As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''UpdatePanel1 control.
+    '''upbook control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
+    Protected WithEvents upbook As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''txtRecno control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtRecno As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtBookingDate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtBookingDate As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtBookingDate_CalendarExtender control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtBookingDate_CalendarExtender As Global.AjaxControlToolkit.CalendarExtender
+
+    '''<summary>
+    '''txtBookingTime control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtBookingTime As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtBookingTime_MaskedEditExtender control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtBookingTime_MaskedEditExtender As Global.AjaxControlToolkit.MaskedEditExtender
+
+    '''<summary>
+    '''ddlBranch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlBranch As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''txtCustomerName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtCustomerName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtCusTel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtCusTel As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtContactPerson control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtContactPerson As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtLocation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLocation As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''chkJobType1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkJobType1 As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
+
+    '''<summary>
+    '''chkJobType2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkJobType2 As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
+
+    '''<summary>
+    '''chkJobType3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkJobType3 As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
+
+    '''<summary>
+    '''txtJobDesc control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtJobDesc As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtReceiveComback control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtReceiveComback As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtBookingBy control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtBookingBy As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtReceiveby control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtReceiveby As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''ddlMessenger control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlMessenger As Global.System.Web.UI.WebControls.DropDownList
 End Class

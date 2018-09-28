@@ -230,6 +230,24 @@ Partial Public Class EditBooking
     Protected WithEvents Importfile As Global.System.Web.UI.WebControls.FileUpload
 
     '''<summary>
+    '''txtshowFile control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtshowFile As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Image1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
     '''btnSaveChange control.
     '''</summary>
     '''<remarks>
