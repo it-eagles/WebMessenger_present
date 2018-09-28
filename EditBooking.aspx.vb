@@ -95,6 +95,14 @@ Public Class EditBooking
                 chkStatus.Checked = False
             End If
             txtRemark.Text = ds.Remark
+            Dim tiel As String = CStr(ds.RecNo)
+            Dim imfil = (From im In db.tblFileITs Where im.Title = tiel).FirstOrDefault
+
+            If Not imfil Is Nothing Then
+                Image1.ImageUrl = "~/FileMessenger/" + imfil.Filename
+                Image1.ImageAlign = ImageAlign.Middle
+                txtshowFile.Text = imfil.Filename
+            End If
 
         End Using
     End Sub
