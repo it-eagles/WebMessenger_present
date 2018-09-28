@@ -99,9 +99,19 @@ Public Class EditBooking
             Dim imfil = (From im In db.tblFileITs Where im.Title = tiel).FirstOrDefault
 
             If Not imfil Is Nothing Then
-                Image1.ImageUrl = "~/FileMessenger/" + imfil.Filename
-                Image1.ImageAlign = ImageAlign.Middle
-                txtshowFile.Text = imfil.Filename
+                Dim Extension As String = Path.GetExtension(imfil.Filename)
+                ' Path ที่เก็บไฟล์
+                Dim FolderPath As String = ConfigurationManager.AppSettings("FolderPath")
+
+                If Extension = ".png" Or Extension = ".jpg" Or Extension = ".jpeg" Then
+                    'Image1.ImageUrl = "~/FileMessenger/" + imfil.Filename
+                    btnImage.ImageUrl = "~/FileMessenger/" + imfil.Filename
+                    btnImage.ImageAlign = ImageAlign.Middle
+                    'Image1.ImageAlign = ImageAlign.Middle
+                    txtshowFile.Text = imfil.Filename
+                    Session("Filename") = imfil.Filename
+                End If
+              
             End If
 
         End Using
@@ -151,5 +161,16 @@ Public Class EditBooking
             'Response.Redirect("~/Default.aspx")
         End Using
 
+    End Sub
+
+    Protected Sub btnImage_Click(sender As Object, e As ImageClickEventArgs)
+        Dim image As String = Session("Filename").ToString
+        openImage(image)
+    End Sub
+    Private Sub openImage(image As String)
+        Image1.ImageUrl = "~/FileMessenger/" + image
+        Image1.ImageAlign = ImageAlign.Middle
+        ScriptManager.RegisterStartupScript(upImage, upImage.GetType(), "show", "$(function () { $('#" + plImage.ClientID + "').modal('show'); });", True)
+        upImage.Update()
     End Sub
 End Class

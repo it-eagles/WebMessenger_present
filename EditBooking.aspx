@@ -177,7 +177,8 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-9 col-md-offset-3">
-                            <asp:Image ID="Image1" runat="server" Width="150"/>
+                            
+                            <asp:ImageButton ID="btnImage" runat="server"  Width="150" OnClick="btnImage_Click"/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -188,5 +189,53 @@
                 </div>
             </div>
         </fieldset>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+       
+            <div id="caption"></div>
+        </div>
+        <asp:Panel ID="plImage" runat="server" CssClass="modal" TabIndex="-1" role="dialog" aria-labelledby="myLabe1">
+            <div class="modal-dialog modal-lg">
+               
+                    <span class="close">&times;</span>
+                    <asp:UpdatePanel ID="upImage" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+
+                            <asp:Image ID="Image1" runat="server" />
+
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+               
+            </div>
+        </asp:Panel>
     </form>
+     <script type='text/javascript'>
+         function openModal() {
+             $('#myModal').modal('show');
+         }
+    </script>
+   <%-- <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('#btnImage');
+        var modalImg = document.getElementById("#img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>--%>
+
 </asp:Content>

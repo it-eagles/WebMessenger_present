@@ -190,46 +190,46 @@
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 " style="overflow: auto;">
                                             <asp:Repeater ID="showCustomer" runat="server" OnItemDataBound="showCustomer_ItemDataBound">
-                            <HeaderTemplate>
-                                <table class="table table-sm">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">เลือก</th>
-                                            <th scope="col">บริษัทผู้ติดต่อ</th>
-                                            <th scope="col">ผู้ติดต่อ</th>
-                                            <th scope="col">โทร</th>
+                                                <HeaderTemplate>
+                                                    <table class="table table-sm">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">เลือก</th>
+                                                                <th scope="col">บริษัทผู้ติดต่อ</th>
+                                                                <th scope="col">ผู้ติดต่อ</th>
+                                                                <th scope="col">โทร</th>
 
-                                        </tr>
-                                    </thead>
-                            </HeaderTemplate>
+                                                            </tr>
+                                                        </thead>
+                                                </HeaderTemplate>
 
-                            <ItemTemplate>
+                                                <ItemTemplate>
 
-                                <tr>
-                                    <td>
-                                        <asp:LinkButton ID="lnkSearch" runat="server" OnClick="lnkSearch_Click" CssClass="btn"><i class="fa fa-hand-pointer-o"></i></asp:LinkButton></td>
-                                    <td>
-                                        <asp:Label ID="lblCustomerName" runat="server" Text="Label"></asp:Label></td>
+                                                    <tr>
+                                                        <td>
+                                                            <asp:LinkButton ID="lnkSearch" runat="server" OnClick="lnkSearch_Click" CssClass="btn"><i class="fa fa-hand-pointer-o"></i></asp:LinkButton></td>
+                                                        <td>
+                                                            <asp:Label ID="lblCustomerName" runat="server" Text="Label"></asp:Label></td>
 
-                                    <td>
-                                        <asp:Label ID="lblContactPerson" runat="server" Text="Label"></asp:Label></td>
-                                    <td>
-                                        <asp:Label ID="lblCusTel" runat="server" Text="Label"></asp:Label></td>
-                                </tr>
+                                                        <td>
+                                                            <asp:Label ID="lblContactPerson" runat="server" Text="Label"></asp:Label></td>
+                                                        <td>
+                                                            <asp:Label ID="lblCusTel" runat="server" Text="Label"></asp:Label></td>
+                                                    </tr>
 
-                            </ItemTemplate>
-                            <FooterTemplate>
-                                <tfoot>
-                                    <tr>
-                                        <th scope="col">เลือก</th>
-                                        <th scope="col">บริษัทผู้ติดต่อ</th>
-                                        <th scope="col">ผู้ติดต่อ</th>
-                                        <th scope="col">โทร</th>
-                                    </tr>
-                                </tfoot>
-                                </table>
-                            </FooterTemplate>
-                        </asp:Repeater>
+                                                </ItemTemplate>
+                                                <FooterTemplate>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th scope="col">เลือก</th>
+                                                            <th scope="col">บริษัทผู้ติดต่อ</th>
+                                                            <th scope="col">ผู้ติดต่อ</th>
+                                                            <th scope="col">โทร</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                    </table>
+                                                </FooterTemplate>
+                                            </asp:Repeater>
                                         </div>
                                     </div>
                                 </section>
