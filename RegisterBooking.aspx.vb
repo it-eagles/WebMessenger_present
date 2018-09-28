@@ -14,24 +14,31 @@ Public Class _Default
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim CustomerName As String = txtCustomerName.Text.Trim
+
         Dim confirmValus As String = Request.Form("confirm_value")
         Dim cu = (From cn In db.tblCustomerLists Where cn.CustomerName = txtCustomerName.Text.Trim Select cn).FirstOrDefault
         If Not cu Is Nothing Then
             saveCustomer()
         Else
             If confirmValus = "Yes" Then
-                'ClientScript.RegisterStartupScript(Me.[GetType](), "alert", "alert('You clicked YES!')", True)
-                db.tblCustomerLists.Add(New tblCustomerList With { _
-                                      .CustomerName = txtCustomerName.Text.Trim, _
-                                          .Location = txtLocation.Text.Trim, _
-                                          .CustomerTel = txtCusTel.Text.Trim, _
-                                          .ContactPerson = txtContactPerson.Text.Trim, _
-                                          .CreateBy = Session("UserID").ToString.ToUpper, _
-                                          .CreateDate = Now
-                                           })
+                Try
+                    db.tblCustomerLists.Add(New tblCustomerList With { _
+                                        .CustomerName = txtCustomerName.Text.Trim, _
+                                        .Location = txtLocation.Text.Trim, _
+                                        .CustomerTel = txtCusTel.Text.Trim, _
+                                        .ContactPerson = txtContactPerson.Text.Trim, _
+                                        .CreateBy = Session("UserID").ToString.ToUpper, _
+                                        .CreateDate = Now
+                                         })
 
-                db.SaveChanges()
-                saveCustomer()
+                    db.SaveChanges()
+                    saveCustomer()
+                Catch ex As Exception
+                    ScriptManager.RegisterStartupScript(Me, Me.GetType(), "redirect", "alert('" & ex.Message & "')", True)
+                End Try
+                'ClientScript.RegisterStartupScript(Me.[GetType](), "alert", "alert('You clicked YES!')", True)
+
             Else
                 saveCustomer()
                 'ClientScript.RegisterStartupScript(Me.[GetType](), "alert", "alert('You clicked NO!')", True)

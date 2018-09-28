@@ -9,8 +9,8 @@
         <EntityTypeShape EntityType="DB_EaglesInternalModel.tblUserMenu" Width="1.5" PointX="4.125" PointY="0.5" />
         <EntityTypeShape EntityType="DB_EaglesInternalModel.tblBookingMessenger" Width="1.5" PointX="0.5" PointY="0.5" />
         <EntityTypeShape EntityType="DB_EaglesInternalModel.tblMessenger" Width="1.5" PointX="5.875" PointY="0.5" />
-        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblCustomerList" Width="1.5" PointX="4.375" PointY="4.75" />
         <EntityTypeShape EntityType="DB_EaglesInternalModel.tblFileIT" Width="1.5" PointX="6.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DB_EaglesInternalModel.tblCustomerList" Width="1.5" PointX="3.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
