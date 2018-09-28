@@ -26,7 +26,7 @@ Partial Public Class DB_EaglesInternalEntities
     Public Overridable Property tblUserMenu() As DbSet(Of tblUserMenu)
     Public Overridable Property tblBookingMessenger() As DbSet(Of tblBookingMessenger)
     Public Overridable Property tblMessenger() As DbSet(Of tblMessenger)
-    Public Overridable Property tblCustomerLists() As DbSet(Of tblCustomerList)
     Public Overridable Property tblFileITs() As DbSet(Of tblFileIT)
+    Public Overridable Property tblCustomerLists() As DbSet(Of tblCustomerList)
 
 End Class
