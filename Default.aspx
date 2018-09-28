@@ -78,7 +78,7 @@
 
             <div class="table-responsive">
 
-                <asp:Repeater ID="dgvBooking" runat="server" OnItemDataBound="dgvBooking_ItemDataBound">
+               <%-- <asp:Repeater ID="dgvBooking" runat="server" OnItemDataBound="dgvBooking_ItemDataBound">
                     <HeaderTemplate>
                         <table class="table table-striped table-bordered table-condensed" id="example1">
                             <thead style="background-color:#ffffff">
@@ -145,8 +145,70 @@
                         </tfoot>          
                         </table>
                     </FooterTemplate>
-                </asp:Repeater>
+                </asp:Repeater>--%>
 
+                   <asp:Repeater ID="dgvBooking" runat="server" OnItemDataBound="dgvBooking_ItemDataBound">
+                    <HeaderTemplate>
+                        <table class="table table-striped table-bordered table-condensed" id="example1">
+                            <thead style="background-color:#ffffff">
+                            <th class="text-center">Recno</th>
+                            <th class="text-center">BookingDate</th>
+                            <th class="text-center">CustomerName</th>
+                            <th class="text-center">Location</th>
+                            <th class="text-center">BookingBy</th>
+                            <th class="text-center">Branch</th>
+                            <th class="text-center">Messenger</th>
+                            <th class="text-center">status</th>                                                             
+                            <th class="text-center">Edit</th>
+                            <th class="text-center">Print</th>
+
+                            </thead>
+                    
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <tr style="background-color:#ffffff"">
+                            <td align="center">
+                                <asp:Label ID="lblRecno" runat="server"></asp:Label></td>
+                            <td align="center">
+                                <asp:Label ID="lblBookingDate" runat="server"></asp:Label></td>
+                            <td>
+                                <asp:Label ID="lblCustomerName" runat="server"></asp:Label></td>
+                            <td>
+                                <asp:Label ID="lblLocation" runat="server"></asp:Label></td>
+                            <td>
+                                <asp:Label ID="lblBookingBy" runat="server"></asp:Label></td>
+                            <td align="center">
+                                <asp:Label ID="lblBranch" runat="server"></asp:Label></td>
+                            <td>
+                                <asp:Label ID="lblMessenger" runat="server"></asp:Label></td>
+                            <td align="center">
+                                <asp:Label ID="lblstatus" runat="server"></asp:Label></td>                       
+                            <td class="text-center">
+                                <asp:LinkButton ID="LinkButton1" CssClass="btn btn-warning btn-sm" runat="server" OnClick="lnkEdit_Click"><i class="fa fa-pencil"></i></asp:LinkButton>
+
+                            </td>
+                            <td class="text-center">
+                                <asp:LinkButton ID="LinkButton2" CssClass="btn btn-default btn-sm" runat="server" OnClick="lnkPrint_Click"><i class="fa fa-print"></i></asp:LinkButton>
+                            </td>
+                        </tr>
+                    </ItemTemplate>
+             
+                    <FooterTemplate>
+                        <tfoot>
+                        <th>Recno</th>
+                        <th>BookingDate</th>
+                        <th>CustomerName</th>
+                        <th>Location</th>
+                        <th>BookingBy</th>
+                        <th>Branch</th>
+                        <th>Messenger</th>
+                        <th>status</th>                          
+                        <th>Edit</th>
+                        <th>Print</th>
+                        </tfoot>          
+                        </table>
+                    </FooterTemplate>
+                </asp:Repeater>
             </div>
         </div>
 
@@ -310,7 +372,6 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 id="myModalLabel">Edit Mile</h3>
                     </div>
-                    <as
                 </div>
             </div>
         </div>

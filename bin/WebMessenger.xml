@@ -973,9 +973,9 @@ txtshowFile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:WebMessenger.EditBooking.Image1">
+</member><member name="F:WebMessenger.EditBooking.btnImage">
 	<summary>
-Image1 control.
+btnImage control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -989,7 +989,34 @@ btnSaveChange control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
 >>>>>>> 61becd2218e91370cb9ae5f0da2497d3f46f8e7a
+=======
+</member><member name="F:WebMessenger.EditBooking.plImage">
+	<summary>
+plImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.EditBooking.upImage">
+	<summary>
+upImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.EditBooking.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+>>>>>>> origin/WebMessenger
 </member><member name="F:WebMessenger.Login.ScriptManager1">
 	<summary>
 ScriptManager1 control.
@@ -1275,118 +1302,6 @@ ScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:WebMessenger.Messenger.btnAddMile">
-	<summary>
-btnAddMile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.UpModal">
-	<summary>
-UpModal control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.lblMessDate">
-	<summary>
-lblMessDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.lblName">
-	<summary>
-lblName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.txtTimeOut">
-	<summary>
-txtTimeOut control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.txtBookingTime_MaskedEditExtender">
-	<summary>
-txtBookingTime_MaskedEditExtender control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.txtMileOut">
-	<summary>
-txtMileOut control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.txtTimeIn">
-	<summary>
-txtTimeIn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.MaskedEditExtender1">
-	<summary>
-MaskedEditExtender1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.txtMileIn">
-	<summary>
-txtMileIn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.btnSaveChange">
-	<summary>
-btnSaveChange control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:WebMessenger.Messenger.UpdatePanel2">
-	<summary>
-UpdatePanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:WebMessenger.Messenger.txtMessDate">
 	<summary>
 txtMessDate control.
@@ -1403,9 +1318,9 @@ CalendarExtender1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:WebMessenger.Messenger.lblNameAdd">
+</member><member name="F:WebMessenger.Messenger.txtNameAdd">
 	<summary>
-lblNameAdd control.
+txtNameAdd control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1462,6 +1377,110 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:WebMessenger.Messenger.btnSave">
 	<summary>
 btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.dgvMile">
+	<summary>
+dgvMile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.plMile">
+	<summary>
+plMile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.upMile">
+	<summary>
+upMile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.lblMessDate">
+	<summary>
+lblMessDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.CalendarExtender2">
+	<summary>
+CalendarExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.lblName">
+	<summary>
+lblName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.txtTimeOut">
+	<summary>
+txtTimeOut control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.MaskedEditExtender1">
+	<summary>
+MaskedEditExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.txtMileOut">
+	<summary>
+txtMileOut control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.txtTimeIn">
+	<summary>
+txtTimeIn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.MaskedEditExtender4">
+	<summary>
+MaskedEditExtender4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.txtMileIn">
+	<summary>
+txtMileIn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:WebMessenger.Messenger.btnSaveChange">
+	<summary>
+btnSaveChange control.
 </summary>
 	<remarks>
 Auto-generated field.

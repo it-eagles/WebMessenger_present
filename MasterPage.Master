@@ -13,9 +13,9 @@
     <title>Messenger Booking System</title>
 
     <!-- Le styles -->
-    <%--    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="Content/css/navbar.css" rel="stylesheet" />--%>
+    <link href="Content/css/navbar.css" rel="stylesheet" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -33,7 +33,7 @@
      <!-- DataTables -->
     <link rel="stylesheet" href="Scripts/datatables.net-bs/css/dataTables.bootstrap.min.css" />
    
-     <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<%--     <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">--%>
     <%--  <style type="text/css">
         /* Sticky footer styles
       -------------------------------------------------- */

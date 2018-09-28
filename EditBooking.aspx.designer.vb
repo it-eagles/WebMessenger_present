@@ -239,13 +239,13 @@ Partial Public Class EditBooking
     Protected WithEvents txtshowFile As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Image1 control.
+    '''btnImage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents btnImage As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
     '''btnSaveChange control.
@@ -255,4 +255,31 @@ Partial Public Class EditBooking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSaveChange As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''plImage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents plImage As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''upImage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents upImage As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''Image1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
 End Class
