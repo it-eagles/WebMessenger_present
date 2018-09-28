@@ -33,13 +33,13 @@
     <Key>
       <PropertyRef Name="CustomerName" />
     </Key>
-    <Property Name="CustomerName" Type="nchar" MaxLength="50" Nullable="false" />
-    <Property Name="CustomerTel" Type="nchar" MaxLength="20" />
-    <Property Name="ContactPerson" Type="nchar" MaxLength="50" />
-    <Property Name="Location" Type="nchar" MaxLength="200" />
-    <Property Name="CreateBy" Type="nchar" MaxLength="30" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CustomerTel" Type="varchar" MaxLength="20" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="200" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="30" />
     <Property Name="CreateDate" Type="date" />
-    <Property Name="UpdateBy" Type="nchar" MaxLength="30" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
     <Property Name="UpdateDate" Type="date" />
   </EntityType>
   <EntityType Name="tblFileIT">

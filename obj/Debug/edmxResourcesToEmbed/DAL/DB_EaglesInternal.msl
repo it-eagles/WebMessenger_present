@@ -89,6 +89,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tblFileITs">
+      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblFileIT">
+        <MappingFragment StoreEntitySet="tblFileIT">
+          <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
+          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="Createby" ColumnName="Createby" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="FileID" ColumnName="FileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tblCustomerLists">
       <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblCustomerList">
         <MappingFragment StoreEntitySet="tblCustomerList">
@@ -100,19 +113,6 @@
           <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
           <ScalarProperty Name="CustomerTel" ColumnName="CustomerTel" />
           <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblFileITs">
-      <EntityTypeMapping TypeName="DB_EaglesInternalModel.tblFileIT">
-        <MappingFragment StoreEntitySet="tblFileIT">
-          <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
-          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
-          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
-          <ScalarProperty Name="Createby" ColumnName="Createby" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="Filename" ColumnName="Filename" />
-          <ScalarProperty Name="FileID" ColumnName="FileID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
