@@ -139,8 +139,8 @@
             <p class="text-muted text-center">Eagles Air & Sea (Thailand) Co.,Ltd.</p>
         </div>
     </footer>
-    '<script src="Scripts/jquery-3.1.1.min.js"></script>
-    '<script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 
     <!-- DataTables -->
    <%-- <script src="Scripts/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -149,7 +149,7 @@
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
      <script type="text/javascript">
         $(document).ready(function () {
-            $('#example1').DataTable()       
+            $('#example1').DataTable();
             /*$('#example2').DataTable({
                 'paging': true,
                 'lengthChange': false,

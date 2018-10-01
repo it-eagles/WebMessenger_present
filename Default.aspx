@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/MasterPage.Master" CodeBehind="Default.aspx.vb" Inherits="WebMessenger.Booking" %>
-
 <%@ Register Assembly="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
@@ -193,8 +192,8 @@
                         </tr>
                     </ItemTemplate>
              
-                    <!--<FooterTemplate>
-                        <tfoot>
+                    <FooterTemplate>
+                        <!--<tfoot>
                         <th>Recno</th>
                         <th>BookingDate</th>
                         <th>CustomerName</th>
@@ -205,9 +204,9 @@
                         <th>status</th>                          
                         <th>Edit</th>
                         <th>Print</th>
-                        </tfoot>          
+                        </tfoot>-->        
                         </table>
-                    </FooterTemplate>-->
+                    </FooterTemplate>
                 </asp:Repeater>
             </div>
         </div>
@@ -377,10 +376,11 @@
         </div>
     
     </form>
+
          <script type='text/javascript'>
              function openModal() {
                  $('#myModal').modal('show');
              }
-
     </script>
+
 </asp:Content>
