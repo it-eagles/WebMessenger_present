@@ -193,7 +193,7 @@
                         </tr>
                     </ItemTemplate>
              
-                    <FooterTemplate>
+                    <!--<FooterTemplate>
                         <tfoot>
                         <th>Recno</th>
                         <th>BookingDate</th>
@@ -207,7 +207,7 @@
                         <th>Print</th>
                         </tfoot>          
                         </table>
-                    </FooterTemplate>
+                    </FooterTemplate>-->
                 </asp:Repeater>
             </div>
         </div>
