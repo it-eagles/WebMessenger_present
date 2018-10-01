@@ -2,6 +2,18 @@
 
 <!DOCTYPE html>
 
+<style>
+
+    .vertical-box-login {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 50vh; /* These two lines are counted as one :-)       */
+
+        display: flex;
+        align-items: center;
+    }
+
+</style>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8" />
@@ -18,24 +30,47 @@
     <link href="Content/css/signin.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+    <div class="vertical-box-login">
     <div class="container">
 
-        <form class="form-signin" runat="server">
-            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <h2 class="form-signin-heading">Please sign in</h2>
-            <label for="inputUser" class="sr-only">User ID</label>
-            <input type="text" id="txtUserName" runat="server" class="form-control" placeholder="User ID" required="required" autofocus="autofocus" autocomplete="off" />
-            <br />
-            <label for="txtUserPass" class="sr-only">Password</label>
-            <input type="password" id="txtUserPass" runat="server" class="form-control" placeholder="Password" required="required" />
-            <asp:Label ID="lblMsg" ForeColor="red" Font-Name="Verdana" Font-Size="10" runat="server" />
-            <br />
-            <br />
-            <asp:Button CssClass="btn btn-lg btn-primary btn-block" ID="Button1" runat="server" Text="Sign in" OnClick="Button1_Click" />
-
-        </form>
+        <div class="row text-center"><h1><strong>EaglesThai</strong></h1></div>
+        <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Messenger Booking</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" runat="server">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <!--<div class="form-group">
+                        <label class="control-label">Login</label>
+                    </div>-->
+                        <!--<label for="inputUser" class="sr-only">User ID</label>-->
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                        <input type="text" id="txtUserName" runat="server" class="form-control" placeholder="Username" required="required" autofocus="autofocus" autocomplete="off" />
+                        </div>
+                    </div>
+                    <!--<label for="txtUserPass" class="sr-only">Password</label>-->
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input type="password" id="txtUserPass" runat="server" class="form-control" placeholder="Password" required="required" />
+                        </div>
+                    </div>
+                    <asp:Label ID="lblMsg" ForeColor="red" Font-Name="Verdana" Font-Size="10" runat="server" />
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-1">
+                            <asp:Button CssClass="btn btn-primary btn-block" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
 
     </div>
+        </div>
     <!-- /container -->
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
